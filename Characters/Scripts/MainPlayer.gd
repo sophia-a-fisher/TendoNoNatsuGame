@@ -1,10 +1,10 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-export var move_speed : float = 75
-export var starting_dir : Vector2 = Vector2(0, .5)
+@export var move_speed : float = 75
+@export var starting_dir : Vector2 = Vector2(0, .5)
 
-onready var animation_tree = $AnimationTree
-onready var state_machine = animation_tree.get("parameters/playback")
+@onready var animation_tree = $AnimationTree
+@onready var state_machine = animation_tree.get("parameters/playback")
 
 #parameters/Idle/blend_position
 
@@ -32,7 +32,8 @@ func _process(delta):
 	var velocity = input_direction * move_speed * delta * 100
 	#print("velocity" + str(Input.get_action_strength("ui_right")))
 	
-	move_and_slide(velocity)
+	set_velocity(velocity)
+	move_and_slide()
 	
 	pick_new_state(velocity)
 	
