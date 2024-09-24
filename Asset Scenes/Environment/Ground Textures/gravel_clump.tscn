@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqlu6u3qt55o6"]
+
+[ext_resource type="PackedScene" uid="uid://cdtf0o5x4o7hs" path="res://Asset Scenes/Environment/Ground Textures/Gravel.tscn" id="1_oe1s2"]
+
+[node name="Gravel_Clump" type="Node2D"]
+
+[node name="Gravel" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-81, -97)
+
+[node name="Gravel2" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-75, -77)
+
+[node name="Gravel3" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-66, -58)
+
+[node name="Gravel4" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-61, -38)
+
+[node name="Gravel5" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-51, -30)
+
+[node name="Gravel6" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-36, -28)
+
+[node name="Gravel7" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-51, -29)
+
+[node name="Gravel8" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-57, -93)
+
+[node name="Gravel9" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-33, -93)
+
+[node name="Gravel10" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-7, -92)
+
+[node name="Gravel11" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(18, -93)
+
+[node name="Gravel12" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(43, -91)
+
+[node name="Gravel13" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(58, -96)
+
+[node name="Gravel14" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(53, -79)
+
+[node name="Gravel15" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(49, -60)
+
+[node name="Gravel16" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(42, -42)
+
+[node name="Gravel17" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(39, -33)
+
+[node name="Gravel18" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(37, -28)
+
+[node name="Gravel19" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(23, -29)
+
+[node name="Gravel20" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(9, -29)
+
+[node name="Gravel21" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-17, -27)
+
+[node name="Gravel22" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(0, -27)
+
+[node name="Gravel23" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-43, -53)
+
+[node name="Gravel24" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-52, -73)
+
+[node name="Gravel25" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-27, -71)
+
+[node name="Gravel26" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-1, -72)
+
+[node name="Gravel27" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(27, -73)
+
+[node name="Gravel28" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(10, -63)
+
+[node name="Gravel29" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(25, -57)
+
+[node name="Gravel30" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(10, -45)
+
+[node name="Gravel31" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-24, -50)
+
+[node name="Gravel32" parent="." instance=ExtResource("1_oe1s2")]
+position = Vector2(-8, -55)

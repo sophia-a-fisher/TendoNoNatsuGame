@@ -1,3 +1,66 @@
 res://default_env.tres
-res://Characters/MainPlayer.tscn
 res://Levels/VillageLevel.tscn
+res://Characters/MainPlayer.tscn
+res://Asset Scenes/Environment/Bushes/bush_2_2.tscn
+res://Asset Scenes/Environment/Barriers/Bricks_Horiz.tscn
+res://Asset Scenes/Environment/Barriers/Bricks_Vert.tscn
+res://Asset Scenes/Environment/Houses/House1.tscn
+res://Asset Scenes/Environment/Houses/House1_LeftConcrete.tscn
+res://Asset Scenes/Environment/Houses/House1_RightConcrete.tscn
+res://Asset Scenes/Environment/Ground Textures/Gravel.tscn
+res://Asset Scenes/Environment/Ground Textures/Stone_Path.tscn
+res://Asset Scenes/Environment/Ground Textures/StonePath_Vert.tscn
+res://Asset Scenes/Environment/Trees/tree_1_1.tscn
+res://Asset Scenes/Environment/Trees/tree_1_2.tscn
+res://Asset Scenes/Environment/Trees/tree_1_3.tscn
+res://Asset Scenes/Environment/Trees/tree_1_4.tscn
+res://Asset Scenes/Environment/Trees/tree_2_1.tscn
+res://Asset Scenes/Environment/Trees/tree_2_2.tscn
+res://Asset Scenes/Environment/Trees/tree_2_3.tscn
+res://Asset Scenes/Environment/Trees/tree_2_4.tscn
+res://Asset Scenes/Environment/Trees/tree_3_1.tscn
+res://Asset Scenes/Environment/Trees/tree_3_2.tscn
+res://Asset Scenes/Environment/Trees/tree_3_3.tscn
+res://Asset Scenes/Environment/Ponds/Pond1.tscn
+res://Asset Scenes/Environment/Ponds/Pond2.tscn
+res://Asset Scenes/Environment/Ponds/Pond3.tscn
+res://Asset Scenes/Environment/Ponds/Pond4.tscn
+res://Asset Scenes/Environment/Vehicles/truck_front1.tscn
+res://Asset Scenes/Environment/Vehicles/truck_front2.tscn
+res://Asset Scenes/Environment/Vehicles/truck_front3.tscn
+res://Asset Scenes/Environment/Rocks/Rock1_1.tscn
+res://Asset Scenes/Environment/Rocks/Rock1_2.tscn
+res://Asset Scenes/Environment/Rocks/Rock2_1.tscn
+res://Asset Scenes/Environment/Rocks/Rock2_2.tscn
+res://Asset Scenes/Environment/Rocks/Rock3_1.tscn
+res://Asset Scenes/Environment/Rocks/Rock3_2.tscn
+res://Asset Scenes/Environment/Rocks/Rock4_1.tscn
+res://Asset Scenes/Environment/Rocks/Rock4_2.tscn
+res://Asset Scenes/Environment/Rocks/Rock5_1.tscn
+res://Asset Scenes/Environment/Rocks/Rock5_2.tscn
+res://Asset Scenes/Environment/Rocks/Rock6_1.tscn
+res://Asset Scenes/Environment/Rocks/Rock6_2.tscn
+res://Asset Scenes/Environment/Rocks/Rock7_1.tscn
+res://Asset Scenes/Environment/Rocks/Rock7_2.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_1_1.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_2_1.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_3_1.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_3_4.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_5_1.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_6_1.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_7_1.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_8_1.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_9_1.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_1_2.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_2_2.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_3_2.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_4_2.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_5_2.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_6_2.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_7_2.tscn
+res://Asset Scenes/Environment/Flower Pots/FlowerPot_8_2.tscn
+res://Asset Scenes/Environment/Weeds Shakeable/grass1.tscn
+res://Scripts/grass_shake.gd
+res://Asset Scenes/Environment/Weeds Shakeable/grass2.tscn
+res://Asset Scenes/Environment/Weeds Shakeable/grass3.tscn
+res://Asset Scenes/House_Areas/house1_area.tscn

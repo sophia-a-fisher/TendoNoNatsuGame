@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://u7dl3ngrkctn"]
+
+[ext_resource type="Texture2D" uid="uid://lp4it4ueeuc2" path="res://Assets/Environ/Rocks/RockPath_Horiz.png" id="1_jfgjd"]
+
+[node name="RockPath_Horiz" type="Sprite2D"]
+position = Vector2(0, -18)
+texture = ExtResource("1_jfgjd")

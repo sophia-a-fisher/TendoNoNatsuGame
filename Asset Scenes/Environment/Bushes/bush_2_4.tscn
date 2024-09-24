@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgsb8rmsndw81"]
+
+[ext_resource type="Texture2D" uid="uid://dst2m6hpyno8w" path="res://Assets/Environ/Bushes/Bush2_4$165$.png" id="1_6y8i1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7xnty"]
+size = Vector2(24, 30.5625)
+
+[node name="Bush1_1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_6y8i1")
+offset = Vector2(0, -26)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -13.7188)
+shape = SubResource("RectangleShape2D_7xnty")

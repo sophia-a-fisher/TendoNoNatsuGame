@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cwbrbjkrgqp4f" path="res://Assets/Characters/Main_Character.png" id="1"]
 [ext_resource type="Script" path="res://Characters/Scripts/MainPlayer.gd" id="2"]
 
-[sub_resource type="RectangleShape2D" id="1"]
-size = Vector2(9, 6)
+[sub_resource type="CircleShape2D" id="CircleShape2D_reghs"]
+radius = 5.5
 
 [sub_resource type="Animation" id="2"]
 length = 0.001
@@ -237,17 +237,19 @@ states/Walk/position = Vector2(595.318, 106)
 transitions = ["Idle", "Walk", SubResource("21"), "Walk", "Idle", SubResource("22"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_xf32x")]
 graph_offset = Vector2(-107.571, -9.976)
 
-[node name="MainPlayer" type="CharacterBody2D"]
+[node name="MainPlayer" type="CharacterBody2D" groups=["Player"]]
+y_sort_enabled = true
 script = ExtResource("2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1")
+offset = Vector2(0, -14.945)
 hframes = 6
 vframes = 8
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 12)
-shape = SubResource("1")
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_reghs")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

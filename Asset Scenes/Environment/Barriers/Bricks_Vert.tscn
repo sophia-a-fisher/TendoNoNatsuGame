@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjl15unflerl3"]
+
+[ext_resource type="Texture2D" uid="uid://cfhlg57who8hk" path="res://Assets/Environ/Decor/BricksVert.png" id="1_i4xlx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j101"]
+size = Vector2(6.00184, 28.0046)
+
+[node name="Bricks_Vert" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_i4xlx")
+offset = Vector2(0, -4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.0110177, -1.99761)
+rotation = -0.0048939
+shape = SubResource("RectangleShape2D_8j101")

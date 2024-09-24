@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq0y25quv2xcx"]
+
+[ext_resource type="Texture2D" uid="uid://ctu8xfngbn7nc" path="res://Assets/Environ/PottedPlants/PottedPlant1_2_Wide.png" id="1_kx2pv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76j41"]
+radius = 3.01445
+height = 39.9844
+
+[node name="Flowerpot" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_kx2pv")
+offset = Vector2(0, -11)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -2)
+rotation = -1.56353
+shape = SubResource("CapsuleShape2D_76j41")

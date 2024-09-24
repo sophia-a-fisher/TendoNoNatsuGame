@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8jrpd5qfiggs"]
+
+[ext_resource type="Texture2D" uid="uid://dayqyuft6qabh" path="res://Assets/Environ/Pond/Pond1_2.png" id="1_v7xnx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76j41"]
+radius = 19.3252
+height = 65.5112
+
+[node name="Pond1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(-1, -4)
+texture = ExtResource("1_v7xnx")
+offset = Vector2(1, -19)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-7.15256e-07, -21)
+rotation = -1.34736
+shape = SubResource("CapsuleShape2D_76j41")

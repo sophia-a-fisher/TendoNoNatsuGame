@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfv5rx0h5yn0v"]
+
+[ext_resource type="Texture2D" uid="uid://bmoxt0tbsungr" path="res://Assets/Environ/Decor/TruckFront3.png" id="1_yyn1p"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_msjn7"]
+radius = 15.9958
+height = 49.9996
+
+[node name="Truck_Front1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(-1, -1)
+texture = ExtResource("1_yyn1p")
+offset = Vector2(0, -25)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -22)
+rotation = 0.00382486
+shape = SubResource("CapsuleShape2D_msjn7")
