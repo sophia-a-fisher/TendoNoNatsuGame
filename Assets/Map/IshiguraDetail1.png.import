@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1oo5hrwe7nuy"
-path="res://.godot/imported/IshiguraDetail1.png-83b00c7828965df460bfe9fc994c43d7.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://Assets/Map/IshiguraDetail1.png"
-dest_files=["res://.godot/imported/IshiguraDetail1.png-83b00c7828965df460bfe9fc994c43d7.ctex"]
 
 [params]
 

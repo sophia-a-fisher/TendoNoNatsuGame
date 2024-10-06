@@ -1,32 +1,123 @@
-[gd_scene load_steps=10 format=3 uid="uid://0hpu1n4vc1us"]
+[gd_scene load_steps=28 format=3 uid="uid://0hpu1n4vc1us"]
 
 [ext_resource type="PackedScene" uid="uid://b3xdl0gmx2p0a" path="res://Characters/MainPlayer.tscn" id="1"]
-[ext_resource type="Texture2D" uid="uid://b1oo5hrwe7nuy" path="res://Assets/Map/IshiguraDetail1.png" id="2_gxsa4"]
+[ext_resource type="Texture2D" uid="uid://m5j87sk5563s" path="res://Assets/Map/IshiguraDetailFinal.png" id="1_fmt0g"]
 [ext_resource type="PackedScene" uid="uid://b6ldhs38j4pew" path="res://Asset Scenes/House_Areas/house1_area.tscn" id="3_mqou8"]
 [ext_resource type="PackedScene" uid="uid://b6in3gcvt7pu4" path="res://Asset Scenes/House_Areas/shrine1_area.tscn" id="4_mljgv"]
 [ext_resource type="PackedScene" uid="uid://ba03xvc5fw4cv" path="res://Asset Scenes/House_Areas/house2_area.tscn" id="5_ip48w"]
 [ext_resource type="PackedScene" uid="uid://drincroaodi7t" path="res://Asset Scenes/House_Areas/house3_area.tscn" id="6_ktxvj"]
 [ext_resource type="PackedScene" uid="uid://cxamwk7mpcosp" path="res://Asset Scenes/House_Areas/park1_area.tscn" id="7_ngclq"]
-[ext_resource type="PackedScene" uid="uid://hebg6td2rn56" path="res://Asset Scenes/Environment/Park/Ball.tscn" id="8_w5rkq"]
 [ext_resource type="PackedScene" uid="uid://cbo382qibypdv" path="res://Asset Scenes/House_Areas/house4_area.tscn" id="9_4mubc"]
+[ext_resource type="PackedScene" uid="uid://bhmsprl2tg8uv" path="res://Asset Scenes/House_Areas/house5_area.tscn" id="10_a6g13"]
+[ext_resource type="PackedScene" uid="uid://b03ufi76bo7vc" path="res://Asset Scenes/House_Areas/park2_area.tscn" id="10_qmwdm"]
+[ext_resource type="PackedScene" uid="uid://da43tuqfyky6j" path="res://Asset Scenes/House_Areas/shrine2_area.tscn" id="11_ifmf6"]
+[ext_resource type="PackedScene" uid="uid://crnvaglc268g5" path="res://Asset Scenes/House_Areas/park3_area.tscn" id="12_1yu0j"]
+[ext_resource type="PackedScene" uid="uid://b4184d4loebdi" path="res://Asset Scenes/House_Areas/house6_area.tscn" id="13_6sswb"]
+[ext_resource type="PackedScene" uid="uid://os55baqmw1k6" path="res://Asset Scenes/House_Areas/house7_area.tscn" id="14_2iqvu"]
+[ext_resource type="PackedScene" uid="uid://bsp3tim4sua6g" path="res://Asset Scenes/House_Areas/house8_area.tscn" id="15_lp3ii"]
+[ext_resource type="PackedScene" uid="uid://biudg7rojdlki" path="res://Asset Scenes/House_Areas/house9_area.tscn" id="16_ei234"]
+[ext_resource type="PackedScene" uid="uid://cs18xx5lrsddm" path="res://Asset Scenes/House_Areas/park4_area.tscn" id="17_o2l7y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiond"]
+size = Vector2(324.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wcnsg"]
+size = Vector2(1250, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_060nw"]
+size = Vector2(22, 911)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_231oy"]
+size = Vector2(20, 399)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_50fyx"]
+size = Vector2(20, 87)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0f5ek"]
+size = Vector2(20, 1358)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x6gv7"]
+size = Vector2(239, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6sb1e"]
+size = Vector2(381, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mdvto"]
+size = Vector2(425, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2kuxh"]
+size = Vector2(434, 20)
 
 [node name="VillageLevel" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-789, 426)
-zoom = Vector2(3, 3)
-
 [node name="Map" type="Sprite2D" parent="."]
 position = Vector2(-319, 446)
-texture = ExtResource("2_gxsa4")
+texture = ExtResource("1_fmt0g")
 metadata/_edit_lock_ = true
+
+[node name="TopBorder" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(334.75, -309)
+shape = SubResource("RectangleShape2D_jiond")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TopBorder"]
+position = Vector2(-510, -307)
+shape = SubResource("RectangleShape2D_wcnsg")
+
+[node name="LeftBorder" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftBorder"]
+position = Vector2(-1146, 645.5)
+shape = SubResource("RectangleShape2D_060nw")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LeftBorder"]
+position = Vector2(-1142, -104.5)
+shape = SubResource("RectangleShape2D_231oy")
+
+[node name="RightBorder" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightBorder"]
+position = Vector2(507, 1168.5)
+shape = SubResource("RectangleShape2D_50fyx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="RightBorder"]
+position = Vector2(506, 377)
+shape = SubResource("RectangleShape2D_0f5ek")
+
+[node name="BottomBorder" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(-1021.5, 1201)
+shape = SubResource("RectangleShape2D_x6gv7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(-633.5, 1202)
+shape = SubResource("RectangleShape2D_6sb1e")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(-180.5, 1200)
+shape = SubResource("RectangleShape2D_mdvto")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="BottomBorder"]
+position = Vector2(302, 1202)
+shape = SubResource("RectangleShape2D_2kuxh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(277, 1092)
+zoom = Vector2(3, 3)
+limit_left = -1135
+limit_top = -299
+limit_right = 497
+limit_bottom = 1190
+editor_draw_limits = true
 
 [node name="Sorting" type="Node2D" parent="."]
 y_sort_enabled = true
 
 [node name="MainPlayer" parent="Sorting" instance=ExtResource("1")]
 z_index = 1
-position = Vector2(-789, 426)
+position = Vector2(277, 1092)
 move_speed = 45.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Sorting/MainPlayer"]
@@ -44,7 +135,22 @@ metadata/_edit_lock_ = true
 
 [node name="Park1" parent="Sorting" instance=ExtResource("7_ngclq")]
 
-[node name="Ball" parent="Sorting" instance=ExtResource("8_w5rkq")]
-position = Vector2(-2, -250)
-
 [node name="House4" parent="Sorting" instance=ExtResource("9_4mubc")]
+
+[node name="House5" parent="Sorting" instance=ExtResource("10_a6g13")]
+
+[node name="Park2" parent="Sorting" instance=ExtResource("10_qmwdm")]
+
+[node name="Shrine2" parent="Sorting" instance=ExtResource("11_ifmf6")]
+
+[node name="Park3" parent="Sorting" instance=ExtResource("12_1yu0j")]
+
+[node name="House6" parent="Sorting" instance=ExtResource("13_6sswb")]
+
+[node name="House7" parent="Sorting" instance=ExtResource("14_2iqvu")]
+
+[node name="House8" parent="Sorting" instance=ExtResource("15_lp3ii")]
+
+[node name="House9" parent="Sorting" instance=ExtResource("16_ei234")]
+
+[node name="Park4" parent="Sorting" instance=ExtResource("17_o2l7y")]
