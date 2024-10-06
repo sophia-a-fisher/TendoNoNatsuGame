@@ -1,0 +1,775 @@
+[gd_scene load_steps=20 format=3 uid="uid://drincroaodi7t"]
+
+[ext_resource type="PackedScene" uid="uid://bl0fc70jf6r40" path="res://Asset Scenes/Environment/Bushes/bush_2_2.tscn" id="1_qwhvo"]
+[ext_resource type="PackedScene" uid="uid://cgsb8rmsndw81" path="res://Asset Scenes/Environment/Bushes/bush_2_4.tscn" id="2_vanyk"]
+[ext_resource type="PackedScene" uid="uid://chrocuqebpi34" path="res://Asset Scenes/Environment/Trees/tree_3_1.tscn" id="3_h34ra"]
+[ext_resource type="PackedScene" uid="uid://b44b4whob7r7p" path="res://Asset Scenes/Environment/Structures/Shed1.tscn" id="4_fnyv2"]
+[ext_resource type="PackedScene" uid="uid://ckbt67u47acnb" path="res://Asset Scenes/Environment/Vehicles/sprayer_side.tscn" id="5_4k73w"]
+[ext_resource type="PackedScene" uid="uid://bfv5rx0h5yn0v" path="res://Asset Scenes/Environment/Vehicles/truck_front3.tscn" id="6_plevs"]
+[ext_resource type="PackedScene" uid="uid://dq0y25quv2xcx" path="res://Asset Scenes/Environment/Flower Pots/FlowerPot_2_2.tscn" id="7_21r6d"]
+[ext_resource type="PackedScene" uid="uid://1hndorgmns3i" path="res://Asset Scenes/Environment/Barriers/Bricks_Horiz.tscn" id="8_4sgb5"]
+[ext_resource type="PackedScene" uid="uid://cjl15unflerl3" path="res://Asset Scenes/Environment/Barriers/Bricks_Vert.tscn" id="9_p0tfp"]
+[ext_resource type="PackedScene" uid="uid://dbg11tfhhauvu" path="res://Asset Scenes/Environment/Flower Pots/FlowerPot_3_1.tscn" id="10_4em6e"]
+[ext_resource type="PackedScene" uid="uid://dvi5lyt2e20il" path="res://Asset Scenes/Environment/Houses/House1.tscn" id="11_st0lj"]
+[ext_resource type="PackedScene" uid="uid://dy5nkmy2cslcb" path="res://Asset Scenes/Environment/Flower Pots/FlowerPot_2_1.tscn" id="12_7ifyn"]
+[ext_resource type="PackedScene" uid="uid://mj0x21h0ti0m" path="res://Asset Scenes/Environment/Rocks/Rock2_1.tscn" id="13_vrm2f"]
+[ext_resource type="PackedScene" uid="uid://ddxta1pb6siqa" path="res://Asset Scenes/Environment/Trees/tree_2_1.tscn" id="14_sed0b"]
+[ext_resource type="PackedScene" uid="uid://cdtf0o5x4o7hs" path="res://Asset Scenes/Environment/Ground Textures/Gravel.tscn" id="15_pg5y0"]
+[ext_resource type="PackedScene" uid="uid://bukys3xtn2g5d" path="res://Asset Scenes/Environment/Weeds Shakeable/grass1.tscn" id="16_febn3"]
+[ext_resource type="PackedScene" uid="uid://bm01w2ylba48h" path="res://Asset Scenes/Environment/Flower Pots/FlowerPot_4_2.tscn" id="17_lwwum"]
+[ext_resource type="PackedScene" uid="uid://ooqkypnn6of6" path="res://Asset Scenes/Environment/Weeds Shakeable/grass2.tscn" id="18_viccv"]
+[ext_resource type="PackedScene" uid="uid://137j6bo4l52i" path="res://Asset Scenes/Environment/Weeds Shakeable/grass3.tscn" id="19_6ru00"]
+
+[node name="House3" type="Node2D"]
+z_index = 1
+y_sort_enabled = true
+
+[node name="Bush1_1" parent="." instance=ExtResource("1_qwhvo")]
+position = Vector2(-1114, -275)
+
+[node name="Bush1_2" parent="." instance=ExtResource("1_qwhvo")]
+position = Vector2(-1074, -275)
+
+[node name="Bush1_3" parent="." instance=ExtResource("1_qwhvo")]
+position = Vector2(-1033, -275)
+
+[node name="Bush1_4" parent="." instance=ExtResource("1_qwhvo")]
+position = Vector2(-994, -275)
+
+[node name="Bush1_6" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -243)
+
+[node name="Bush1_7" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -211)
+
+[node name="Bush1_8" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -211)
+
+[node name="Bush1_9" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -179)
+
+[node name="Bush1_10" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -146)
+
+[node name="Bush1_11" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -114)
+
+[node name="Bush1_12" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -82)
+
+[node name="Bush1_13" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -49)
+
+[node name="Bush1_14" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, -18)
+
+[node name="Bush1_15" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, 14)
+
+[node name="Bush1_16" parent="." instance=ExtResource("2_vanyk")]
+position = Vector2(-1125, 48)
+
+[node name="Tree1_1" parent="." instance=ExtResource("3_h34ra")]
+position = Vector2(-1107, 109)
+
+[node name="Bush1_5" parent="." instance=ExtResource("1_qwhvo")]
+position = Vector2(-961, -275)
+
+[node name="House2" parent="." instance=ExtResource("4_fnyv2")]
+position = Vector2(-1071, -168)
+
+[node name="Truck_Front1" parent="." instance=ExtResource("5_4k73w")]
+position = Vector2(-1070.5, -168.5)
+
+[node name="Truck_Front2" parent="." instance=ExtResource("6_plevs")]
+position = Vector2(-1042, -234)
+
+[node name="Flowerpot" parent="." instance=ExtResource("7_21r6d")]
+position = Vector2(-1091, -255)
+
+[node name="Bricks_Horiz" parent="." instance=ExtResource("8_4sgb5")]
+position = Vector2(-1024, -114.5)
+
+[node name="Bricks_Horiz2" parent="." instance=ExtResource("8_4sgb5")]
+position = Vector2(-1024, -23.5)
+
+[node name="Bricks_Vert" parent="." instance=ExtResource("9_p0tfp")]
+position = Vector2(-1056, -99)
+
+[node name="Bricks_Vert3" parent="." instance=ExtResource("9_p0tfp")]
+position = Vector2(-1056, -70.5)
+
+[node name="Bricks_Vert4" parent="." instance=ExtResource("9_p0tfp")]
+position = Vector2(-992, -70.5)
+
+[node name="Bricks_Vert5" parent="." instance=ExtResource("9_p0tfp")]
+position = Vector2(-1056, -41.5)
+
+[node name="Bricks_Vert6" parent="." instance=ExtResource("9_p0tfp")]
+position = Vector2(-992, -41.5)
+
+[node name="Bricks_Vert7" parent="." instance=ExtResource("9_p0tfp")]
+position = Vector2(-1056, -41.5)
+
+[node name="Bricks_Vert8" parent="." instance=ExtResource("9_p0tfp")]
+position = Vector2(-992, -41.5)
+
+[node name="Bricks_Vert2" parent="." instance=ExtResource("9_p0tfp")]
+position = Vector2(-992, -99)
+
+[node name="Flowerpot2" parent="." instance=ExtResource("10_4em6e")]
+position = Vector2(-1042, -96)
+
+[node name="House1" parent="." instance=ExtResource("11_st0lj")]
+position = Vector2(-1007, -252)
+
+[node name="Flowerpot3" parent="." instance=ExtResource("12_7ifyn")]
+position = Vector2(-1004, -36)
+
+[node name="Pond1" parent="." instance=ExtResource("13_vrm2f")]
+position = Vector2(-1037, -35)
+
+[node name="Tree1_2" parent="." instance=ExtResource("14_sed0b")]
+position = Vector2(-1022, -93)
+
+[node name="Gravel" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1096, -152)
+
+[node name="Gravel2" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1097, -175)
+
+[node name="Gravel3" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1096, -197)
+
+[node name="Gravel4" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1095, -218)
+
+[node name="Gravel5" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1095, -235)
+
+[node name="Gravel6" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1069, -239)
+
+[node name="Gravel7" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1073, -216)
+
+[node name="Gravel8" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1040, -232)
+
+[node name="Gravel9" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1019, -247)
+
+[node name="Gravel10" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-991, -245)
+
+[node name="Gravel11" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-995, -255)
+
+[node name="Gravel12" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-970, -247)
+
+[node name="Gravel13" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-961, -240)
+
+[node name="Gravel14" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-959, -220)
+
+[node name="Gravel15" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-985, -227)
+
+[node name="Gravel16" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1019, -226)
+
+[node name="Gravel17" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1003, -228)
+
+[node name="Gravel18" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1023, -211)
+
+[node name="Gravel19" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1008, -181)
+
+[node name="Gravel20" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-977, -204)
+
+[node name="Gravel21" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-958, -195)
+
+[node name="Gravel22" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-970, -181)
+
+[node name="Gravel23" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1056, -183)
+
+[node name="Gravel24" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1075, -158)
+
+[node name="Gravel25" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1095, -129)
+
+[node name="Gravel26" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1075, -136)
+
+[node name="Gravel27" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1052, -131)
+
+[node name="Gravel28" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1029, -134)
+
+[node name="Gravel29" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1003, -133)
+
+[node name="Gravel30" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-980, -137)
+
+[node name="Gravel31" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-959, -157)
+
+[node name="Gravel32" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-958, -174)
+
+[node name="Gravel33" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-959, -136)
+
+[node name="Gravel34" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1095, -110)
+
+[node name="Gravel35" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1074, -113)
+
+[node name="Gravel36" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1072, -110)
+
+[node name="Gravel37" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1073, -100)
+
+[node name="Gravel38" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1093, -91)
+
+[node name="Gravel39" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1094, -71)
+
+[node name="Gravel40" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1074, -78)
+
+[node name="Gravel41" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1071, -85)
+
+[node name="Gravel42" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1072, -67)
+
+[node name="Gravel43" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1072, -52)
+
+[node name="Gravel44" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1072, -31)
+
+[node name="Gravel45" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1067, -24)
+
+[node name="Gravel46" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1095, -47)
+
+[node name="Gravel47" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1097, -25)
+
+[node name="Gravel48" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-978, -119)
+
+[node name="Gravel49" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-978, -106)
+
+[node name="Gravel50" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-978, -88)
+
+[node name="Gravel51" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-979, -70)
+
+[node name="Gravel52" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-978, -51)
+
+[node name="Gravel53" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-978, -28)
+
+[node name="Gravel54" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-981, -22)
+
+[node name="Gravel55" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-956, -34)
+
+[node name="Gravel56" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-957, -49)
+
+[node name="Gravel57" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-958, -72)
+
+[node name="Gravel58" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-957, -94)
+
+[node name="Gravel59" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-958, -119)
+
+[node name="Gravel60" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1097, -4)
+
+[node name="Gravel61" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1097, 15)
+
+[node name="Gravel62" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1078, -13)
+
+[node name="Gravel63" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1073, 9)
+
+[node name="Gravel64" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1054, -6)
+
+[node name="Gravel65" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1045, -12)
+
+[node name="Gravel66" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1028, -12)
+
+[node name="Gravel67" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1005, -14)
+
+[node name="Gravel68" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-989, -1)
+
+[node name="Gravel69" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-967, -5)
+
+[node name="Gravel70" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-958, -12)
+
+[node name="Gravel71" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-960, 10)
+
+[node name="Gravel72" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-960, 27)
+
+[node name="Gravel73" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-960, 43)
+
+[node name="Gravel74" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-960, 64)
+
+[node name="Gravel75" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-984, 18)
+
+[node name="Gravel76" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1009, 7)
+
+[node name="Gravel77" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1036, 14)
+
+[node name="Gravel78" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1051, 16)
+
+[node name="Gravel79" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1013, 27)
+
+[node name="Gravel80" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1029, 10)
+
+[node name="Gravel81" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1095, 35)
+
+[node name="Gravel82" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1072, 29)
+
+[node name="Gravel83" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1093, 55)
+
+[node name="Gravel84" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1098, 66)
+
+[node name="Gravel85" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1086, 90)
+
+[node name="Gravel86" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1086, 90)
+
+[node name="Gravel87" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1082, 67)
+
+[node name="Gravel88" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1072, 50)
+
+[node name="Gravel89" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1048, 38)
+
+[node name="Gravel90" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1036, 37)
+
+[node name="Gravel91" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-995, 35)
+
+[node name="Gravel92" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-981, 40)
+
+[node name="Gravel93" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-984, 56)
+
+[node name="Gravel94" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-982, 75)
+
+[node name="Gravel95" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-964, 84)
+
+[node name="Gravel96" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-958, 96)
+
+[node name="Gravel97" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-963, 114)
+
+[node name="Gravel98" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-967, 122)
+
+[node name="Gravel99" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-980, 101)
+
+[node name="Gravel100" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1016, 48)
+
+[node name="Gravel101" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1006, 60)
+
+[node name="Gravel102" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1033, 59)
+
+[node name="Gravel103" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1054, 62)
+
+[node name="Gravel104" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1059, 78)
+
+[node name="Gravel105" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1027, 77)
+
+[node name="Gravel106" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1037, 83)
+
+[node name="Gravel107" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1067, 91)
+
+[node name="Gravel108" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1054, 101)
+
+[node name="Gravel109" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1044, 116)
+
+[node name="Gravel110" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1037, 122)
+
+[node name="Gravel111" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1021, 122)
+
+[node name="Gravel112" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1029, 104)
+
+[node name="Gravel113" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1004, 82)
+
+[node name="Gravel114" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-1007, 99)
+
+[node name="Gravel115" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-996, 97)
+
+[node name="Gravel116" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-999, 122)
+
+[node name="Gravel117" parent="." instance=ExtResource("15_pg5y0")]
+z_index = -1
+position = Vector2(-985, 120)
+
+[node name="grass1" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1084, -249)
+
+[node name="grass2" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-944, -245)
+
+[node name="grass3" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-943, -215)
+
+[node name="grass4" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1109, -79)
+
+[node name="grass5" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1108, -26)
+
+[node name="grass6" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1108, -17)
+
+[node name="grass7" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1107, -1)
+
+[node name="grass8" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1047, -70)
+
+[node name="grass9" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1014, -102)
+
+[node name="grass10" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-997, -109)
+
+[node name="grass11" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1035, -112)
+
+[node name="grass12" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1052, -94)
+
+[node name="grass13" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1032, -94)
+
+[node name="grass14" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1008, -89)
+
+[node name="grass15" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1008, -89)
+
+[node name="grass16" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1003, -71)
+
+[node name="grass17" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1014, -70)
+
+[node name="grass18" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1022, -61)
+
+[node name="grass19" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1023, -33)
+
+[node name="grass20" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1049, -33)
+
+[node name="grass21" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1039, -31)
+
+[node name="grass22" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1000, -33)
+
+[node name="grass23" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1010, -42)
+
+[node name="grass24" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-999, -52)
+
+[node name="grass25" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1096, 117)
+
+[node name="grass26" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1115, 113)
+
+[node name="grass27" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1124, 104)
+
+[node name="grass28" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1099, 103)
+
+[node name="grass29" parent="." instance=ExtResource("16_febn3")]
+position = Vector2(-1087, 113)
+
+[node name="Flowerpot4" parent="." instance=ExtResource("17_lwwum")]
+position = Vector2(-1028, -76)
+
+[node name="grass30" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1003, -104)
+
+[node name="grass31" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1037, -71)
+
+[node name="grass32" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1049, -59)
+
+[node name="grass33" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1009, -31)
+
+[node name="grass34" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1001, -84)
+
+[node name="grass35" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-947, -205)
+
+[node name="grass36" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1104, -248)
+
+[node name="grass37" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1070, -249)
+
+[node name="grass38" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1112, -99)
+
+[node name="grass39" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1111, 12)
+
+[node name="grass40" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1104, 26)
+
+[node name="grass41" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1067, 119)
+
+[node name="grass42" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-955, 140)
+
+[node name="grass43" parent="." instance=ExtResource("18_viccv")]
+position = Vector2(-1046, 135)
+
+[node name="grass44" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1104, 118)
+
+[node name="grass45" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1061, 123)
+
+[node name="grass46" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-945, 130)
+
+[node name="grass47" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-941, 14)
+
+[node name="grass48" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1093, -11)
+
+[node name="grass49" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1110, -70)
+
+[node name="grass50" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1015, -62)
+
+[node name="grass51" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-996, -100)
+
+[node name="grass52" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1019, -29)
+
+[node name="grass53" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1028, -70)
+
+[node name="grass54" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-955, -61)
+
+[node name="grass55" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1109, -170)
+
+[node name="grass56" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-1110, -241)
+
+[node name="grass57" parent="." instance=ExtResource("19_6ru00")]
+position = Vector2(-996, -246)

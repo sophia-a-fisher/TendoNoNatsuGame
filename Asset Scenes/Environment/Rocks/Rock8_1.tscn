@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://wl5d2kk06gvs"]
+
+[ext_resource type="Texture2D" uid="uid://b026sa6b8gs5d" path="res://Assets/Environ/Rocks/DecorativeRock_7_1.png" id="1_vj4u2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76j41"]
+radius = 3.99989
+height = 21.9994
+
+[node name="Pond1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -2)
+texture = ExtResource("1_vj4u2")
+offset = Vector2(0, -8)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -4)
+rotation = -1.56353
+shape = SubResource("CapsuleShape2D_76j41")

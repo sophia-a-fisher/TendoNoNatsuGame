@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7gcooorxqn8a"]
+
+[ext_resource type="Texture2D" uid="uid://cx0ll1x43tpbn" path="res://Assets/Environ/Park/waterfountain.png" id="1_5yyst"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hryml"]
+size = Vector2(9.99998, 19)
+
+[node name="House1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(1, 0)
+texture = ExtResource("1_5yyst")
+offset = Vector2(0, -21)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.505491, -7.99907)
+rotation = -1.57263
+shape = SubResource("RectangleShape2D_hryml")

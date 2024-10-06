@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b44b4whob7r7p"]
+
+[ext_resource type="Texture2D" uid="uid://dbfkjruxiy7nf" path="res://Assets/Environ/Decor/Shed1.png" id="1_88ny4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j101"]
+size = Vector2(23.066, 5.00183)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kah20"]
+size = Vector2(5, 23)
+
+[node name="House1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -23)
+texture = ExtResource("1_88ny4")
+offset = Vector2(0, -24)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(35.9816, -8)
+rotation = -1.57263
+shape = SubResource("RectangleShape2D_8j101")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-37, -7.968)
+shape = SubResource("RectangleShape2D_kah20")

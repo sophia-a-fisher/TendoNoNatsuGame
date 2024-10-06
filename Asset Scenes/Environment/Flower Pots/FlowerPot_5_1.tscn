@@ -8,9 +8,8 @@ height = 12.0142
 
 [node name="Flowerpot" type="Sprite2D"]
 y_sort_enabled = true
-position = Vector2(0, -1)
 texture = ExtResource("1_obcii")
-offset = Vector2(0, -11)
+offset = Vector2(0, -18)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

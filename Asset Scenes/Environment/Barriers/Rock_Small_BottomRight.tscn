@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx2fmyhlh1wuj"]
+
+[ext_resource type="Texture2D" uid="uid://btutbjbgr2gk7" path="res://Assets/Environ/Rocks/RockBarrierBottomRight_2.png" id="1_dqr3c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j101"]
+size = Vector2(24.9967, 25)
+
+[node name="Bricks_Horiz" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_dqr3c")
+offset = Vector2(0, -4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1.49908, -4.49931)
+rotation = -1.57263
+shape = SubResource("RectangleShape2D_8j101")

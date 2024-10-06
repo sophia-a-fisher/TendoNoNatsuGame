@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckbt67u47acnb"]
+
+[ext_resource type="Texture2D" uid="uid://pbhebhpo2oip" path="res://Assets/Environ/Decor/Sprayer.png" id="1_y6shv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_msjn7"]
+radius = 9.00034
+height = 73.9993
+
+[node name="Truck_Front1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -12)
+texture = ExtResource("1_y6shv")
+offset = Vector2(-1, -14)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -7)
+rotation = -1.57046
+shape = SubResource("CapsuleShape2D_msjn7")

@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://dquflthfn7b6r"]
+
+[ext_resource type="Script" path="res://Scripts/grass_shake.gd" id="1_2xf4x"]
+[ext_resource type="Texture2D" uid="uid://dportnjfldxk" path="res://Assets/Environ/Garden/Strawberrry.png" id="2_lpok2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ummu5"]
+radius = 6.0
+
+[sub_resource type="Animation" id="Animation_sbqpa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_bjh5y"]
+resource_name = "shake"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.3, 0.4, 0.466667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.523599, -0.349066, 0.261799, -0.0872665, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x2sc5"]
+_data = {
+"RESET": SubResource("Animation_sbqpa"),
+"shake": SubResource("Animation_bjh5y")
+}
+
+[node name="grass1" type="Area2D"]
+script = ExtResource("1_2xf4x")
+
+[node name="grass1" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("2_lpok2")
+offset = Vector2(0, -7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("CircleShape2D_ummu5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_x2sc5")
+}
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
