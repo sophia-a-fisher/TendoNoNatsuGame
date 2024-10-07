@@ -1,13 +1,24 @@
 res://default_env.tres
-res://Asset Scenes/Environment/Vehicles/mower_side.tscn
-res://Asset Scenes/Environment/Garden/Garden Plants/garden_scallot.tscn
 res://Levels/VillageLevel.tscn
-res://Asset Scenes/Environment/Garden/Garden Plants/garden_kabocha.tscn
-res://Asset Scenes/Environment/Weeds Shakeable/grass1.tscn
+res://Asset Scenes/Environment/Barriers/Rock_Large_Left_Inner.tscn
+res://Asset Scenes/Environment/Barriers/Rock_Large_Right_Inner.tscn
+res://Asset Scenes/Environment/Barriers/Rock_Large_BottomRight_Inner.tscn
 res://Asset Scenes/Environment/Weeds Shakeable/grass3.tscn
-res://Asset Scenes/Environment/Garden/Garden Plants/garden_pom.tscn
-res://Asset Scenes/House_Areas/house8_area.tscn
-res://Asset Scenes/House_Areas/house7_area.tscn
-res://Asset Scenes/House_Areas/park2_area.tscn
-res://Asset Scenes/House_Areas/house5_area.tscn
-res://Asset Scenes/House_Areas/park4_area.tscn
+res://Asset Scenes/Environment/Barriers/Rock_Large_BottomLeft_Inner.tscn
+res://Asset Scenes/Environment/Garden/Plot_Left.tscn
+res://Asset Scenes/Environment/Garden/Plot_Right.tscn
+res://Asset Scenes/Environment/Garden/Plot_Top.tscn
+res://Asset Scenes/Environment/Garden/Plot_Bottom.tscn
+res://Asset Scenes/Environment/Garden/Plot_Inner.tscn
+res://Asset Scenes/Environment/Garden/Plot_TopLeft.tscn
+res://Asset Scenes/Environment/Garden/Plot_TopRight.tscn
+res://Asset Scenes/Environment/Garden/Plot_BottomRight.tscn
+res://Asset Scenes/Environment/Garden/Plot_BottomLeft.tscn
+res://Asset Scenes/Environment/Trees/tree_2_4.tscn
+res://Asset Scenes/House_Areas/house11_area.tscn
+res://Asset Scenes/Environment/Farm/Crate1.tscn
+res://Asset Scenes/Environment/Farm/Crate2.tscn
+res://Asset Scenes/Environment/Farm/Crate1_1.tscn
+res://Asset Scenes/House_Areas/house12_area.tscn
+res://Asset Scenes/Environment/Vehicles/motorcycle.tscn
+res://Asset Scenes/House_Areas/house10_area.tscn

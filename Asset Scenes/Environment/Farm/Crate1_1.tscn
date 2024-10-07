@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwgblm7mv0hn7"]
+
+[ext_resource type="Texture2D" uid="uid://dib6j1pjmtxap" path="res://Assets/Environ/Garden/crate1_1.png" id="1_hsi2x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0f45j"]
+size = Vector2(7.10881, 29.9992)
+
+[node name="Pond1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, 5)
+texture = ExtResource("1_hsi2x")
+offset = Vector2(0, -14)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.0250356, -2.55468)
+rotation = -1.56353
+shape = SubResource("RectangleShape2D_0f45j")

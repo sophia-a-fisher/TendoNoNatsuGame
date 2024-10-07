@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://0hpu1n4vc1us"]
+[gd_scene load_steps=31 format=3 uid="uid://0hpu1n4vc1us"]
 
 [ext_resource type="PackedScene" uid="uid://b3xdl0gmx2p0a" path="res://Characters/MainPlayer.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://m5j87sk5563s" path="res://Assets/Map/IshiguraDetailFinal.png" id="1_fmt0g"]
@@ -17,6 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://bsp3tim4sua6g" path="res://Asset Scenes/House_Areas/house8_area.tscn" id="15_lp3ii"]
 [ext_resource type="PackedScene" uid="uid://biudg7rojdlki" path="res://Asset Scenes/House_Areas/house9_area.tscn" id="16_ei234"]
 [ext_resource type="PackedScene" uid="uid://cs18xx5lrsddm" path="res://Asset Scenes/House_Areas/park4_area.tscn" id="17_o2l7y"]
+[ext_resource type="PackedScene" uid="uid://bn4it88juu1ct" path="res://Asset Scenes/House_Areas/house10_area.tscn" id="18_ednt2"]
+[ext_resource type="PackedScene" uid="uid://bsowbseadlmki" path="res://Asset Scenes/House_Areas/house11_area.tscn" id="19_oox0v"]
+[ext_resource type="PackedScene" uid="uid://b36oefkiah5dj" path="res://Asset Scenes/House_Areas/house12_area.tscn" id="20_m6fm8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jiond"]
 size = Vector2(324.5, 20)
@@ -56,6 +59,7 @@ texture = ExtResource("1_fmt0g")
 metadata/_edit_lock_ = true
 
 [node name="TopBorder" type="StaticBody2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopBorder"]
 position = Vector2(334.75, -309)
@@ -66,6 +70,7 @@ position = Vector2(-510, -307)
 shape = SubResource("RectangleShape2D_wcnsg")
 
 [node name="LeftBorder" type="StaticBody2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftBorder"]
 position = Vector2(-1146, 645.5)
@@ -76,6 +81,7 @@ position = Vector2(-1142, -104.5)
 shape = SubResource("RectangleShape2D_231oy")
 
 [node name="RightBorder" type="StaticBody2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightBorder"]
 position = Vector2(507, 1168.5)
@@ -86,6 +92,7 @@ position = Vector2(506, 377)
 shape = SubResource("RectangleShape2D_0f5ek")
 
 [node name="BottomBorder" type="StaticBody2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomBorder"]
 position = Vector2(-1021.5, 1201)
@@ -104,7 +111,7 @@ position = Vector2(302, 1202)
 shape = SubResource("RectangleShape2D_2kuxh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(277, 1092)
+position = Vector2(156, -73)
 zoom = Vector2(3, 3)
 limit_left = -1135
 limit_top = -299
@@ -117,7 +124,7 @@ y_sort_enabled = true
 
 [node name="MainPlayer" parent="Sorting" instance=ExtResource("1")]
 z_index = 1
-position = Vector2(277, 1092)
+position = Vector2(156, -73)
 move_speed = 45.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Sorting/MainPlayer"]
@@ -128,29 +135,52 @@ position = Vector2(1, -2)
 metadata/_edit_lock_ = true
 
 [node name="Shrine1" parent="Sorting" instance=ExtResource("4_mljgv")]
+metadata/_edit_lock_ = true
 
 [node name="House2" parent="Sorting" instance=ExtResource("5_ip48w")]
+metadata/_edit_lock_ = true
 
 [node name="House3" parent="Sorting" instance=ExtResource("6_ktxvj")]
+metadata/_edit_lock_ = true
 
 [node name="Park1" parent="Sorting" instance=ExtResource("7_ngclq")]
+metadata/_edit_lock_ = true
 
 [node name="House4" parent="Sorting" instance=ExtResource("9_4mubc")]
+metadata/_edit_lock_ = true
 
 [node name="House5" parent="Sorting" instance=ExtResource("10_a6g13")]
+metadata/_edit_lock_ = true
 
 [node name="Park2" parent="Sorting" instance=ExtResource("10_qmwdm")]
+metadata/_edit_lock_ = true
 
 [node name="Shrine2" parent="Sorting" instance=ExtResource("11_ifmf6")]
+metadata/_edit_lock_ = true
 
 [node name="Park3" parent="Sorting" instance=ExtResource("12_1yu0j")]
+metadata/_edit_lock_ = true
 
 [node name="House6" parent="Sorting" instance=ExtResource("13_6sswb")]
+metadata/_edit_lock_ = true
 
 [node name="House7" parent="Sorting" instance=ExtResource("14_2iqvu")]
+metadata/_edit_lock_ = true
 
 [node name="House8" parent="Sorting" instance=ExtResource("15_lp3ii")]
+metadata/_edit_lock_ = true
 
 [node name="House9" parent="Sorting" instance=ExtResource("16_ei234")]
+metadata/_edit_lock_ = true
 
 [node name="Park4" parent="Sorting" instance=ExtResource("17_o2l7y")]
+metadata/_edit_lock_ = true
+
+[node name="House10" parent="Sorting" instance=ExtResource("18_ednt2")]
+metadata/_edit_lock_ = true
+
+[node name="House11" parent="Sorting" instance=ExtResource("19_oox0v")]
+metadata/_edit_lock_ = true
+
+[node name="House12" parent="Sorting" instance=ExtResource("20_m6fm8")]
+metadata/_edit_lock_ = true

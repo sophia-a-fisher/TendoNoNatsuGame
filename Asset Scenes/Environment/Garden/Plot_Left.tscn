@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bukfby58t2an2"]
+
+[ext_resource type="Texture2D" uid="uid://bybwl2be1uoiv" path="res://Assets/Environ/Garden/Left_Edge_Dirt.png" id="1_1rll1"]
+
+[node name="Gravel" type="Sprite2D"]
+z_index = -1
+position = Vector2(0, -18)
+texture = ExtResource("1_1rll1")
