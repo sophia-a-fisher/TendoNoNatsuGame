@@ -1,0 +1,442 @@
+[gd_scene load_steps=13 format=3 uid="uid://cpj42b233sv85"]
+
+[ext_resource type="PackedScene" uid="uid://cho4qa2stadsr" path="res://Asset Scenes/Environment/Bushes/bush_5_1.tscn" id="1_kqw1t"]
+[ext_resource type="PackedScene" uid="uid://br1pxpe2fywgn" path="res://Asset Scenes/Environment/Park/Slide.tscn" id="2_injsm"]
+[ext_resource type="PackedScene" uid="uid://bq242dr2wxvtr" path="res://Asset Scenes/Environment/Park/Bars.tscn" id="3_3gm6r"]
+[ext_resource type="PackedScene" uid="uid://b7gcooorxqn8a" path="res://Asset Scenes/Environment/Park/Water_Fountain.tscn" id="4_cgn1o"]
+[ext_resource type="PackedScene" uid="uid://dqf6qhastnsnm" path="res://Asset Scenes/Environment/Trees/tree_1_1.tscn" id="5_q1m5r"]
+[ext_resource type="PackedScene" uid="uid://cl4kolyxxuvwh" path="res://Asset Scenes/Environment/Weeds Shakeable/weed1.tscn" id="6_61hfm"]
+[ext_resource type="PackedScene" uid="uid://74hele1lys5l" path="res://Asset Scenes/Environment/Weeds Shakeable/weed2.tscn" id="7_ovyvj"]
+[ext_resource type="PackedScene" uid="uid://mrvhrjep52xg" path="res://Asset Scenes/Environment/Weeds Shakeable/weed4.tscn" id="8_j1q1n"]
+[ext_resource type="PackedScene" uid="uid://dfprfucnyvmct" path="res://Asset Scenes/Environment/Weeds Shakeable/weed9.tscn" id="9_25cj1"]
+[ext_resource type="PackedScene" uid="uid://m3mj02rglq1s" path="res://Asset Scenes/Environment/Ground Textures/Park_Ground.tscn" id="10_whhwr"]
+[ext_resource type="Script" path="res://Asset Scenes/House Areas/walk_speed_area.gd" id="11_tuq3e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5jdd"]
+size = Vector2(271, 162)
+
+[node name="Park5" type="Node2D"]
+z_index = 1
+y_sort_enabled = true
+
+[node name="Bush1_1" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-107, 61)
+
+[node name="Bush1_2" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 80)
+
+[node name="Bush1_3" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 102)
+
+[node name="Bush1_4" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 126)
+
+[node name="Bush1_5" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 150)
+
+[node name="Bush1_6" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 171)
+
+[node name="Bush1_7" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 191)
+
+[node name="Bush1_17" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(6, 125)
+
+[node name="Bush1_18" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-20, 143)
+
+[node name="Bush1_19" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(33, 142)
+
+[node name="Bush1_20" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(8, 160)
+
+[node name="Bush1_8" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 212)
+
+[node name="Bush1_9" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 235)
+
+[node name="Bush1_10" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 257)
+
+[node name="Bush1_11" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 280)
+
+[node name="Bush1_12" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 307)
+
+[node name="Bush1_13" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-106, 332)
+
+[node name="Bush1_14" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-65, 332)
+
+[node name="Bush1_15" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(-23, 332)
+
+[node name="House1" parent="." instance=ExtResource("2_injsm")]
+position = Vector2(17, 65)
+
+[node name="House2" parent="." instance=ExtResource("3_3gm6r")]
+position = Vector2(-22, 286)
+
+[node name="House3" parent="." instance=ExtResource("4_cgn1o")]
+position = Vector2(-64, 117)
+
+[node name="Tree1_1" parent="." instance=ExtResource("5_q1m5r")]
+position = Vector2(7, 128)
+
+[node name="grass1" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-18, 151)
+
+[node name="grass2" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-38, 149)
+
+[node name="grass3" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-30, 159)
+
+[node name="grass4" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-65, 184)
+
+[node name="grass5" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-80, 165)
+
+[node name="grass6" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-81, 178)
+
+[node name="grass7" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-77, 148)
+
+[node name="grass8" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-66, 165)
+
+[node name="grass9" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-82, 204)
+
+[node name="grass10" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-57, 215)
+
+[node name="grass11" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-71, 196)
+
+[node name="grass12" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-77, 234)
+
+[node name="grass13" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-79, 221)
+
+[node name="grass14" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-28, 239)
+
+[node name="grass15" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-55, 241)
+
+[node name="grass16" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-66, 228)
+
+[node name="grass17" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-76, 244)
+
+[node name="grass18" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-68, 245)
+
+[node name="grass19" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-92, 237)
+
+[node name="grass20" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-85, 251)
+
+[node name="grass21" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-87, 276)
+
+[node name="grass22" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-84, 291)
+
+[node name="grass23" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-79, 304)
+
+[node name="grass24" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-83, 313)
+
+[node name="grass25" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-59, 314)
+
+[node name="grass26" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-66, 300)
+
+[node name="grass27" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-32, 323)
+
+[node name="grass28" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-40, 316)
+
+[node name="grass29" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-18, 306)
+
+[node name="grass30" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-4, 317)
+
+[node name="grass31" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(31, 312)
+
+[node name="grass34" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-11, 241)
+
+[node name="grass35" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-42, 247)
+
+[node name="grass36" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(9, 248)
+
+[node name="grass37" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(1, 228)
+
+[node name="grass38" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(28, 243)
+
+[node name="grass39" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-37, 216)
+
+[node name="grass40" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(23, 172)
+
+[node name="grass41" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(33, 143)
+
+[node name="grass42" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(47, 152)
+
+[node name="grass43" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(36, 154)
+
+[node name="grass44" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(53, 130)
+
+[node name="grass45" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(39, 107)
+
+[node name="grass46" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(44, 119)
+
+[node name="grass47" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-27, 119)
+
+[node name="grass48" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-53, 85)
+
+[node name="grass49" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-66, 78)
+
+[node name="grass50" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-79, 90)
+
+[node name="grass51" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-64, 89)
+
+[node name="grass52" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-83, 108)
+
+[node name="grass53" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-31, 99)
+
+[node name="grass54" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-81, 58)
+
+[node name="grass55" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-87, 70)
+
+[node name="grass56" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(1, 54)
+
+[node name="grass57" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(-17, 60)
+
+[node name="grass58" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(29, 56)
+
+[node name="grass59" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(45, 53)
+
+[node name="grass60" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(58, 53)
+
+[node name="grass61" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(47, 78)
+
+[node name="grass62" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(53, 93)
+
+[node name="grass32" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(16, 318)
+
+[node name="grass33" parent="." instance=ExtResource("6_61hfm")]
+position = Vector2(16, 318)
+
+[node name="grass63" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-58, 196)
+
+[node name="grass64" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-65, 227)
+
+[node name="grass65" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-38, 204)
+
+[node name="grass66" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-17, 211)
+
+[node name="grass67" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-38, 304)
+
+[node name="grass68" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-75, 292)
+
+[node name="grass69" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-5, 315)
+
+[node name="grass70" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(9, 308)
+
+[node name="grass71" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(18, 249)
+
+[node name="grass72" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(28, 213)
+
+[node name="grass73" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-14, 158)
+
+[node name="grass74" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-10, 167)
+
+[node name="grass75" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-52, 97)
+
+[node name="grass76" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-80, 130)
+
+[node name="grass77" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(-53, 125)
+
+[node name="grass78" parent="." instance=ExtResource("7_ovyvj")]
+position = Vector2(58, 94)
+
+[node name="grass79" parent="." instance=ExtResource("8_j1q1n")]
+position = Vector2(44, 160)
+
+[node name="grass80" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-41, 174)
+
+[node name="grass81" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-58, 143)
+
+[node name="grass82" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-46, 135)
+
+[node name="grass83" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-72, 120)
+
+[node name="grass84" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-64, 121)
+
+[node name="grass85" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-41, 174)
+
+[node name="grass90" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(2, 165)
+
+[node name="grass91" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(38, 169)
+
+[node name="grass92" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(20, 222)
+
+[node name="grass93" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-47, 221)
+
+[node name="grass94" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(39, 243)
+
+[node name="grass95" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-30, 255)
+
+[node name="grass96" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-38, 284)
+
+[node name="grass97" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-44, 286)
+
+[node name="grass98" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-3, 289)
+
+[node name="grass99" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(4, 287)
+
+[node name="grass100" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(25, 271)
+
+[node name="grass101" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(35, 292)
+
+[node name="grass102" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(40, 265)
+
+[node name="grass103" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(41, 302)
+
+[node name="grass104" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-55, 261)
+
+[node name="grass105" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(59, 100)
+
+[node name="grass86" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-58, 143)
+
+[node name="grass87" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-46, 135)
+
+[node name="grass88" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-72, 120)
+
+[node name="grass89" parent="." instance=ExtResource("9_25cj1")]
+position = Vector2(-64, 121)
+
+[node name="Bush1_16" parent="." instance=ExtResource("1_kqw1t")]
+position = Vector2(17, 332)
+
+[node name="Gravel" parent="." instance=ExtResource("10_whhwr")]
+position = Vector2(-67, 274)
+
+[node name="Gravel2" parent="." instance=ExtResource("10_whhwr")]
+position = Vector2(-42, 272)
+
+[node name="Gravel3" parent="." instance=ExtResource("10_whhwr")]
+position = Vector2(-21, 279)
+
+[node name="Gravel4" parent="." instance=ExtResource("10_whhwr")]
+position = Vector2(1, 276)
+
+[node name="Gravel5" parent="." instance=ExtResource("10_whhwr")]
+position = Vector2(23, 280)
+
+[node name="Gravel6" parent="." instance=ExtResource("10_whhwr")]
+position = Vector2(-26, 284)
+
+[node name="Gravel8" parent="." instance=ExtResource("10_whhwr")]
+position = Vector2(-7, 287)
+
+[node name="Gravel7" parent="." instance=ExtResource("10_whhwr")]
+position = Vector2(-58, 285)
+
+[node name="WalkSpeedArea" type="Area2D" parent="."]
+script = ExtResource("11_tuq3e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WalkSpeedArea"]
+position = Vector2(-38, 175.5)
+rotation = -1.5708
+shape = SubResource("RectangleShape2D_f5jdd")
+
+[connection signal="body_entered" from="WalkSpeedArea" to="WalkSpeedArea" method="_on_body_entered"]
+[connection signal="body_exited" from="WalkSpeedArea" to="WalkSpeedArea" method="_on_body_exited"]

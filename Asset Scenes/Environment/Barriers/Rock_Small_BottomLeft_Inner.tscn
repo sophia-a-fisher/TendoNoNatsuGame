@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bd6f5n2fv4fug" path="res://Assets/Environ/Rocks/RockBarrierInnerLeftCorner_2.png" id="1_f1akv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j101"]
-size = Vector2(6.99815, 23.9981)
+size = Vector2(6.99815, 18.9981)
 
 [node name="Bricks_Horiz" type="Sprite2D"]
 y_sort_enabled = true
@@ -14,6 +14,6 @@ offset = Vector2(0, -4)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1.96695e-06, -3.49908)
+position = Vector2(2.49999, -3.50366)
 rotation = -1.57263
 shape = SubResource("RectangleShape2D_8j101")

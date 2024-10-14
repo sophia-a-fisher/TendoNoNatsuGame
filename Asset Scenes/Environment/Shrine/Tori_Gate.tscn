@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbd3goxpod6t0"]
+
+[ext_resource type="Texture2D" uid="uid://dcld7poa2mdmw" path="res://Assets/Environ/Shrine/ToriGate.png" id="1_csxck"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76j41"]
+radius = 5.99258
+height = 16.0141
+
+[node name="Pond1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, 29)
+texture = ExtResource("1_csxck")
+offset = Vector2(0, -55)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-31, -4)
+rotation = -1.56353
+shape = SubResource("CapsuleShape2D_76j41")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(31, -4)
+rotation = -1.56353
+shape = SubResource("CapsuleShape2D_76j41")

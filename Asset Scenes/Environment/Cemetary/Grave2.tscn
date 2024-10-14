@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxb6j1x0w2j81"]
+
+[ext_resource type="Texture2D" uid="uid://jgm46rodbhau" path="res://Assets/Environ/Cemetary/Grave2.png" id="1_14f0d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kah20"]
+size = Vector2(40, 21)
+
+[node name="House1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -9)
+texture = ExtResource("1_14f0d")
+offset = Vector2(0, -38)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -8.5)
+shape = SubResource("RectangleShape2D_kah20")

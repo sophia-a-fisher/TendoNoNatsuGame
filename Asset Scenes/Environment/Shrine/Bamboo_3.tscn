@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bobd6vssb61ii"]
+
+[ext_resource type="Texture2D" uid="uid://dbcgixvp7vv65" path="res://Assets/Environ/Shrine/bamboo_sprout.png" id="1_lliyq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76j41"]
+radius = 6.99981
+height = 24.0139
+
+[node name="Pond1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_lliyq")
+offset = Vector2(-1, -9)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, -4)
+rotation = -1.56353
+shape = SubResource("CapsuleShape2D_76j41")

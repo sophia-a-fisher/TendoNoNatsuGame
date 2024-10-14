@@ -1,25 +1,35 @@
-[gd_scene load_steps=31 format=3 uid="uid://0hpu1n4vc1us"]
+[gd_scene load_steps=41 format=3 uid="uid://0hpu1n4vc1us"]
 
 [ext_resource type="PackedScene" uid="uid://b3xdl0gmx2p0a" path="res://Characters/MainPlayer.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://m5j87sk5563s" path="res://Assets/Map/IshiguraDetailFinal.png" id="1_fmt0g"]
-[ext_resource type="PackedScene" uid="uid://b6ldhs38j4pew" path="res://Asset Scenes/House_Areas/house1_area.tscn" id="3_mqou8"]
-[ext_resource type="PackedScene" uid="uid://b6in3gcvt7pu4" path="res://Asset Scenes/House_Areas/shrine1_area.tscn" id="4_mljgv"]
-[ext_resource type="PackedScene" uid="uid://ba03xvc5fw4cv" path="res://Asset Scenes/House_Areas/house2_area.tscn" id="5_ip48w"]
-[ext_resource type="PackedScene" uid="uid://drincroaodi7t" path="res://Asset Scenes/House_Areas/house3_area.tscn" id="6_ktxvj"]
-[ext_resource type="PackedScene" uid="uid://cxamwk7mpcosp" path="res://Asset Scenes/House_Areas/park1_area.tscn" id="7_ngclq"]
-[ext_resource type="PackedScene" uid="uid://cbo382qibypdv" path="res://Asset Scenes/House_Areas/house4_area.tscn" id="9_4mubc"]
-[ext_resource type="PackedScene" uid="uid://bhmsprl2tg8uv" path="res://Asset Scenes/House_Areas/house5_area.tscn" id="10_a6g13"]
-[ext_resource type="PackedScene" uid="uid://b03ufi76bo7vc" path="res://Asset Scenes/House_Areas/park2_area.tscn" id="10_qmwdm"]
-[ext_resource type="PackedScene" uid="uid://da43tuqfyky6j" path="res://Asset Scenes/House_Areas/shrine2_area.tscn" id="11_ifmf6"]
-[ext_resource type="PackedScene" uid="uid://crnvaglc268g5" path="res://Asset Scenes/House_Areas/park3_area.tscn" id="12_1yu0j"]
-[ext_resource type="PackedScene" uid="uid://b4184d4loebdi" path="res://Asset Scenes/House_Areas/house6_area.tscn" id="13_6sswb"]
-[ext_resource type="PackedScene" uid="uid://os55baqmw1k6" path="res://Asset Scenes/House_Areas/house7_area.tscn" id="14_2iqvu"]
-[ext_resource type="PackedScene" uid="uid://bsp3tim4sua6g" path="res://Asset Scenes/House_Areas/house8_area.tscn" id="15_lp3ii"]
-[ext_resource type="PackedScene" uid="uid://biudg7rojdlki" path="res://Asset Scenes/House_Areas/house9_area.tscn" id="16_ei234"]
-[ext_resource type="PackedScene" uid="uid://cs18xx5lrsddm" path="res://Asset Scenes/House_Areas/park4_area.tscn" id="17_o2l7y"]
-[ext_resource type="PackedScene" uid="uid://bn4it88juu1ct" path="res://Asset Scenes/House_Areas/house10_area.tscn" id="18_ednt2"]
-[ext_resource type="PackedScene" uid="uid://bsowbseadlmki" path="res://Asset Scenes/House_Areas/house11_area.tscn" id="19_oox0v"]
-[ext_resource type="PackedScene" uid="uid://b36oefkiah5dj" path="res://Asset Scenes/House_Areas/house12_area.tscn" id="20_m6fm8"]
+[ext_resource type="PackedScene" uid="uid://b6ldhs38j4pew" path="res://Asset Scenes/House Areas/house1_area.tscn" id="3_mqou8"]
+[ext_resource type="PackedScene" uid="uid://b6in3gcvt7pu4" path="res://Asset Scenes/House Areas/shrine1_area.tscn" id="4_mljgv"]
+[ext_resource type="PackedScene" uid="uid://ba03xvc5fw4cv" path="res://Asset Scenes/House Areas/house2_area.tscn" id="5_ip48w"]
+[ext_resource type="PackedScene" uid="uid://drincroaodi7t" path="res://Asset Scenes/House Areas/house3_area.tscn" id="6_ktxvj"]
+[ext_resource type="PackedScene" uid="uid://cxamwk7mpcosp" path="res://Asset Scenes/House Areas/park1_area.tscn" id="7_ngclq"]
+[ext_resource type="PackedScene" uid="uid://cbo382qibypdv" path="res://Asset Scenes/House Areas/house4_area.tscn" id="9_4mubc"]
+[ext_resource type="PackedScene" uid="uid://bhmsprl2tg8uv" path="res://Asset Scenes/House Areas/house5_area.tscn" id="10_a6g13"]
+[ext_resource type="PackedScene" uid="uid://b03ufi76bo7vc" path="res://Asset Scenes/House Areas/park2_area.tscn" id="10_qmwdm"]
+[ext_resource type="PackedScene" uid="uid://da43tuqfyky6j" path="res://Asset Scenes/House Areas/shrine2_area.tscn" id="11_ifmf6"]
+[ext_resource type="PackedScene" uid="uid://crnvaglc268g5" path="res://Asset Scenes/House Areas/park3_area.tscn" id="12_1yu0j"]
+[ext_resource type="PackedScene" uid="uid://b4184d4loebdi" path="res://Asset Scenes/House Areas/house6_area.tscn" id="13_6sswb"]
+[ext_resource type="PackedScene" uid="uid://os55baqmw1k6" path="res://Asset Scenes/House Areas/house7_area.tscn" id="14_2iqvu"]
+[ext_resource type="PackedScene" uid="uid://bsp3tim4sua6g" path="res://Asset Scenes/House Areas/house8_area.tscn" id="15_lp3ii"]
+[ext_resource type="PackedScene" uid="uid://biudg7rojdlki" path="res://Asset Scenes/House Areas/house9_area.tscn" id="16_ei234"]
+[ext_resource type="PackedScene" uid="uid://cs18xx5lrsddm" path="res://Asset Scenes/House Areas/park4_area.tscn" id="17_o2l7y"]
+[ext_resource type="PackedScene" uid="uid://bn4it88juu1ct" path="res://Asset Scenes/House Areas/house10_area.tscn" id="18_ednt2"]
+[ext_resource type="PackedScene" uid="uid://bsowbseadlmki" path="res://Asset Scenes/House Areas/house11_area.tscn" id="19_oox0v"]
+[ext_resource type="PackedScene" uid="uid://b36oefkiah5dj" path="res://Asset Scenes/House Areas/house12_area.tscn" id="20_m6fm8"]
+[ext_resource type="PackedScene" uid="uid://c4cblamun2fs0" path="res://Asset Scenes/House Areas/shrine3_area.tscn" id="21_ko7t1"]
+[ext_resource type="PackedScene" uid="uid://b4gnri4lt8efg" path="res://Asset Scenes/House Areas/house13_area.tscn" id="22_dq074"]
+[ext_resource type="PackedScene" uid="uid://culkquegpikyi" path="res://Asset Scenes/House Areas/house14_area.tscn" id="23_h7477"]
+[ext_resource type="PackedScene" uid="uid://bqjl0ikm1vooq" path="res://Asset Scenes/House Areas/house15_area.tscn" id="24_jos3q"]
+[ext_resource type="PackedScene" uid="uid://bb1eh1xuc6qpe" path="res://Asset Scenes/House Areas/cemetary1_area.tscn" id="25_x814q"]
+[ext_resource type="PackedScene" uid="uid://cpj42b233sv85" path="res://Asset Scenes/House Areas/park5_area.tscn" id="26_xt7qx"]
+[ext_resource type="PackedScene" uid="uid://4v0c10nraylc" path="res://Asset Scenes/House Areas/house16_area.tscn" id="27_ym2ci"]
+[ext_resource type="PackedScene" uid="uid://dvgds5wof8g6w" path="res://Asset Scenes/House Areas/house17_area.tscn" id="28_einri"]
+[ext_resource type="PackedScene" uid="uid://baytwvo7f6lli" path="res://Asset Scenes/House Areas/shrine4_area.tscn" id="29_qxiqc"]
+[ext_resource type="PackedScene" uid="uid://3xqvswbcf8cq" path="res://Asset Scenes/House Areas/park6_area.tscn" id="30_wsc8b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jiond"]
 size = Vector2(324.5, 20)
@@ -54,6 +64,7 @@ size = Vector2(434, 20)
 [node name="VillageLevel" type="Node2D"]
 
 [node name="Map" type="Sprite2D" parent="."]
+z_index = -2
 position = Vector2(-319, 446)
 texture = ExtResource("1_fmt0g")
 metadata/_edit_lock_ = true
@@ -111,7 +122,7 @@ position = Vector2(302, 1202)
 shape = SubResource("RectangleShape2D_2kuxh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(156, -73)
+position = Vector2(-10, -93)
 zoom = Vector2(3, 3)
 limit_left = -1135
 limit_top = -299
@@ -124,7 +135,7 @@ y_sort_enabled = true
 
 [node name="MainPlayer" parent="Sorting" instance=ExtResource("1")]
 z_index = 1
-position = Vector2(156, -73)
+position = Vector2(-10, -93)
 move_speed = 45.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Sorting/MainPlayer"]
@@ -183,4 +194,34 @@ metadata/_edit_lock_ = true
 metadata/_edit_lock_ = true
 
 [node name="House12" parent="Sorting" instance=ExtResource("20_m6fm8")]
+metadata/_edit_lock_ = true
+
+[node name="Shrine3" parent="Sorting" instance=ExtResource("21_ko7t1")]
+metadata/_edit_lock_ = true
+
+[node name="House13" parent="Sorting" instance=ExtResource("22_dq074")]
+metadata/_edit_lock_ = true
+
+[node name="House14" parent="Sorting" instance=ExtResource("23_h7477")]
+metadata/_edit_lock_ = true
+
+[node name="House15" parent="Sorting" instance=ExtResource("24_jos3q")]
+metadata/_edit_lock_ = true
+
+[node name="Cemetary1" parent="Sorting" instance=ExtResource("25_x814q")]
+metadata/_edit_lock_ = true
+
+[node name="Park5" parent="Sorting" instance=ExtResource("26_xt7qx")]
+metadata/_edit_lock_ = true
+
+[node name="House16" parent="Sorting" instance=ExtResource("27_ym2ci")]
+metadata/_edit_lock_ = true
+
+[node name="House17" parent="Sorting" instance=ExtResource("28_einri")]
+metadata/_edit_lock_ = true
+
+[node name="Shrine4" parent="Sorting" instance=ExtResource("29_qxiqc")]
+metadata/_edit_lock_ = true
+
+[node name="Park6" parent="Sorting" instance=ExtResource("30_wsc8b")]
 metadata/_edit_lock_ = true

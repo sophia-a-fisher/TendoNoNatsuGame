@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://br1pxpe2fywgn"]
+
+[ext_resource type="Texture2D" uid="uid://0rio7yjnjsd4" path="res://Assets/Environ/Park/Slide.png" id="1_5n7on"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b7w3k"]
+radius = 3.16228
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3vpx"]
+size = Vector2(18.8965, 18.1394)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8j0cn"]
+radius = 9.02002
+height = 52.0316
+
+[node name="House1" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -2)
+texture = ExtResource("1_5n7on")
+offset = Vector2(-22, -37)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3.8147e-06, 2.38419e-07)
+rotation = -1.57263
+shape = SubResource("CircleShape2D_b7w3k")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(38.4514, -6.09478)
+rotation = 0.00289925
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_y3vpx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-65, -5)
+rotation = 1.59304
+shape = SubResource("CapsuleShape2D_8j0cn")
