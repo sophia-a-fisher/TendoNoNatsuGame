@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd55ly82ei56g"]
+
+[ext_resource type="Texture2D" uid="uid://c5u7lyw344ny2" path="res://Assets/House Interior/FloorTransitionBar.png" id="1_mtrdu"]
+
+[node name="Gravel" type="Sprite2D"]
+z_index = -2
+position = Vector2(0, -18)
+texture = ExtResource("1_mtrdu")

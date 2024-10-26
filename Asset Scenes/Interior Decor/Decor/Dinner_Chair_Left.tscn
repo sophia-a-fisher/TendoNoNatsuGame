@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://btba6xolc2mpj"]
+
+[ext_resource type="Texture2D" uid="uid://6m36ba16347m" path="res://Assets/House Interior/Dinner_Chair_Left.png" id="1_cao86"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_reh2r"]
+radius = 4.0
+height = 16.0
+
+[node name="Gravel" type="Sprite2D"]
+position = Vector2(0, -2)
+texture = ExtResource("1_cao86")
+offset = Vector2(0, -16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -4)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_reh2r")

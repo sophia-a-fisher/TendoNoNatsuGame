@@ -17,40 +17,53 @@ func _on_body_entered(body: Node2D) -> void:
 		
 func switchToHouseExterior(body: Node2D) -> void:
 	
-	body.set_velocity(Vector2(0,0))
+	# Preventing the player from moving
+	body.input_enabled = false;
+	GlobalPlayer.move_speed = GlobalPlayer.stroll_speed
+	
+	GlobalEnviron.time = get_parent().time
+	
 	if is_in_group("House1_Exit"):
-		body.set_player_position(-10,-99)
+		GlobalPlayer.player_position = Vector2(-10, -99)
 	elif is_in_group("House2_Exit"):
-		body.set_player_position(-615,-142)
+		GlobalPlayer.player_position = Vector2(-615,-142)
 	elif is_in_group("House3_Exit"):
-		body.set_player_position(-1007,-238)
+		GlobalPlayer.player_position = Vector2(-1007,-238)
 	elif is_in_group("House4_Exit"):
-		body.set_player_position(-1041,316)
+		GlobalPlayer.player_position = Vector2(-1041,316)
 	elif is_in_group("House5_Exit"):
-		body.set_player_position(-1052,667)
+		GlobalPlayer.player_position = Vector2(-1052,667)
 	elif is_in_group("House6_Exit"):
-		body.set_player_position(-660,799)
+		GlobalPlayer.player_position = Vector2(-660,799)
 	elif is_in_group("House7_Exit"):
-		body.set_player_position(-430,948)
+		GlobalPlayer.player_position = Vector2(-430,948)
 	elif is_in_group("House8_Exit"):
-		body.set_player_position(-264,1022)
+		GlobalPlayer.player_position = Vector2(-264,1022)
 	elif is_in_group("House9_Exit"):
-		body.set_player_position(-35,1115)
+		GlobalPlayer.player_position = Vector2(-35,1115)
 	elif is_in_group("House10_Exit"):
-		body.set_player_position(339,-88)
+		GlobalPlayer.player_position = Vector2(339,-88)
 	elif is_in_group("House11_Exit"):
-		body.set_player_position(249,111)
+		GlobalPlayer.player_position = Vector2(249,111)
 	elif is_in_group("House12_Exit"):
-		body.set_player_position(409,384)
+		GlobalPlayer.player_position = Vector2(409,384)
 	elif is_in_group("House13_Exit"):
-		body.set_player_position(-619,152)
+		GlobalPlayer.player_position = Vector2(-619,152)
 	elif is_in_group("House14_Exit"):
-		body.set_player_position(-530,415)
+		GlobalPlayer.player_position = Vector2(-530,415)
 	elif is_in_group("House15_Exit"):
-		body.set_player_position(-545,548)
+		GlobalPlayer.player_position = Vector2(-545,548)
 	elif is_in_group("House16_Exit"):
-		body.set_player_position(-5,399)
+		GlobalPlayer.player_position = Vector2(-5,399)
 	elif is_in_group("House17_Exit"):
-		body.set_player_position(42,648)
+		GlobalPlayer.player_position = Vector2(42,648)
 		
+	TransitionScreen.transition()
+	await TransitionScreen.on_transition_finished
+	
 	get_tree().change_scene_to_file('res://Levels/VillageLevel.tscn')
+	
+	
+	
+	
+	

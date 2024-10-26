@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://10g12vnm66wh"]
+
+[ext_resource type="Texture2D" uid="uid://dqtoappuj3rgn" path="res://Assets/House Interior/Genkan_Floor.png" id="1_dia8x"]
+
+[node name="Gravel" type="Sprite2D"]
+z_index = -2
+position = Vector2(0, -18)
+texture = ExtResource("1_dia8x")

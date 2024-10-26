@@ -1,6 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://vbuix57thni0"]
+[gd_scene load_steps=25 format=3 uid="uid://vbuix57thni0"]
 
 [ext_resource type="PackedScene" uid="uid://b3xdl0gmx2p0a" path="res://Characters/MainPlayer.tscn" id="1_fwlnu"]
+[ext_resource type="Script" path="res://Asset Scenes/House Interiors/house_interior.gd" id="1_ld7x4"]
 [ext_resource type="PackedScene" uid="uid://u7uldt84cqxj" path="res://Asset Scenes/Environment/Cemetary/Grave1.tscn" id="2_5nf4k"]
 [ext_resource type="PackedScene" uid="uid://bjrtl4hmcmim3" path="res://Asset Scenes/Environment/Barriers/Rock_Large_BottomLeft_Inner.tscn" id="3_me74t"]
 [ext_resource type="PackedScene" uid="uid://cqahdkflkpocf" path="res://Asset Scenes/Environment/Barriers/Rock_Large_BottomRight_Inner.tscn" id="4_2u2oe"]
@@ -31,6 +32,7 @@ size = Vector2(29, 20)
 [node name="Cemetary1" type="Node2D"]
 z_index = 1
 y_sort_enabled = true
+script = ExtResource("1_ld7x4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-187, -2)

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvhk6t2touy0q"]
+
+[ext_resource type="Texture2D" uid="uid://3tekhud7mp8q" path="res://Assets/House Interior/Waste_Bucket.png" id="1_l1qh2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_reh2r"]
+radius = 4.0
+height = 12.0
+
+[node name="Gravel" type="Sprite2D"]
+position = Vector2(0, -10)
+texture = ExtResource("1_l1qh2")
+offset = Vector2(0, -8)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(0, -1)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_reh2r")

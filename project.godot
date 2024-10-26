@@ -16,6 +16,12 @@ config/features=PackedStringArray("4.3")
 boot_splash/bg_color=Color(0.0253638, 0.0253638, 0.0253638, 1)
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalEnviron="*res://Levels/GlobalEnviron.gd"
+GlobalPlayer="*res://Characters/Scripts/GlobalPlayer.gd"
+TransitionScreen="*res://GUI/TransitionScreen.tscn"
+
 [display]
 
 window/size/viewport_width=1920
@@ -73,5 +79,5 @@ common/enable_pause_aware_picking=true
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-environment/defaults/default_clear_color=Color(0.0719203, 0.0475549, 0.0159261, 1)
+environment/defaults/default_clear_color=Color(0.06876, 0.0478378, 0.0263699, 1)
 environment/defaults/default_environment="res://default_env.tres"

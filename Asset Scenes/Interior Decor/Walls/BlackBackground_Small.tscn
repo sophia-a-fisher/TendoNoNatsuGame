@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwff7e7h1gjk"]
+
+[ext_resource type="Texture2D" uid="uid://bbrynv3pe1fom" path="res://Assets/House Interior/BlackBackground_Short.png" id="1_5bd1t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j101"]
+size = Vector2(27.0265, 6.99999)
+
+[node name="Bricks_Horiz" type="Sprite2D"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_5bd1t")
+offset = Vector2(0, -4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -1.489)
+rotation = -1.57263
+shape = SubResource("RectangleShape2D_8j101")

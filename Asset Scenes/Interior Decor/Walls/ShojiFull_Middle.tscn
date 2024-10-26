@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://u1ifogx3krvl"]
+
+[ext_resource type="Texture2D" uid="uid://n1kspdoy66d2" path="res://Assets/House Interior/FullShoji_Middle.png" id="1_kw2re"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j101"]
+size = Vector2(6.00184, 36.0018)
+
+[node name="Bricks_Horiz" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_kw2re")
+offset = Vector2(0, -4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.000956535, 24.022)
+rotation = -1.57263
+shape = SubResource("RectangleShape2D_8j101")

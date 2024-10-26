@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2ra016r21k2u"]
+
+[ext_resource type="Texture2D" uid="uid://by25acpsc076e" path="res://Assets/House Interior/BlackBackground.png" id="1_tyh83"]
+
+[node name="Bricks_Horiz" type="Sprite2D"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_tyh83")
+offset = Vector2(0, -4)

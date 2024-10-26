@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkwt5yq1u4fso"]
+
+[ext_resource type="Texture2D" uid="uid://cnm3di07flt7" path="res://Assets/House Interior/Zabuton2_Stack.png" id="1_7o164"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_reh2r"]
+radius = 6.0
+height = 26.0
+
+[node name="Gravel" type="Sprite2D"]
+position = Vector2(0, -4)
+texture = ExtResource("1_7o164")
+offset = Vector2(0, -14)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(0, -5)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_reh2r")

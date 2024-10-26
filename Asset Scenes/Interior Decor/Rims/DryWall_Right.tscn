@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://tlu3oc5cgodd"]
+
+[ext_resource type="Texture2D" uid="uid://d1o3trywxf3hg" path="res://Assets/House Interior/WallEdge_Right.png" id="1_x2osw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hxgqd"]
+size = Vector2(36, 7)
+
+[node name="Bricks_Horiz" type="Sprite2D"]
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_x2osw")
+offset = Vector2(0, -4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -4)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_hxgqd")

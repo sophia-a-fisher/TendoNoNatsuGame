@@ -1,9 +1,27 @@
 extends Area2D
 
+@export var player_scene: PackedScene = preload("res://Characters/MainPlayer.tscn")
+@export var spawn_location: Vector2 = Vector2(300, 400) 
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _ready():
+	#spawn_player(spawn_location)
+	pass
+
+#func spawn_player(position: Vector2):
+	#var sorting_node = $Sorting  # Reference the "Sorting" node
+	#if sorting_node:
+	#	var player = player_scene.instantiate()  # Create an instance of the player
+	#	sorting_node.add_child(player)  # Add the player to the "Sorting" node
+	#	player.position = position  # Set the player's position
+	#	player.y_sort_enabled = true
+	#	player.z_index = 0
+		
+		# Add RemoteTransform2D to the player
+	#	var remote_transform = RemoteTransform2D.new()  # Create the RemoteTransform2D instance
+	#	player.add_child(remote_transform)  # Add it as a child of the player   
+	# Example of setting the RemoteTransform2D properties
+	#	remote_transform.remote_path = get_node("Camera2D").get_path()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -11,9 +29,14 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		switchToHouseInterior()
+		switchToHouseInterior(body)
 	
-func switchToHouseInterior() -> void:
+func switchToHouseInterior(body: Node2D) -> void:
+	TransitionScreen.transition()
+	await TransitionScreen.on_transition_finished
+	var villageLevel = get_parent().get_parent().get_parent().get_parent()
+	GlobalEnviron.time = villageLevel.get_node("CanvasModulate").time
+	
 	if is_in_group("House1_Entry"):
 		get_tree().change_scene_to_file('res://Asset Scenes/House Interiors/house1_interior.tscn')
 	elif is_in_group("House2_Entry"):

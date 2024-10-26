@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx6ay1tm0if14"]
+
+[ext_resource type="Texture2D" uid="uid://cglljahskadwg" path="res://Assets/House Interior/Zabuton3.png" id="1_uk5p1"]
+
+[node name="Gravel" type="Sprite2D"]
+z_index = -1
+position = Vector2(0, -13)
+texture = ExtResource("1_uk5p1")
+offset = Vector2(0, -5)

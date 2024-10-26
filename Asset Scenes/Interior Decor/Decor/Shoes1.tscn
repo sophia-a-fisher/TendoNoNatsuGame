@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgouqcuupr6ee"]
+
+[ext_resource type="Texture2D" uid="uid://d25c5ygih808u" path="res://Assets/House Interior/Shoes1.png" id="1_alrrc"]
+
+[node name="Gravel" type="Sprite2D"]
+position = Vector2(0, -9)
+texture = ExtResource("1_alrrc")
+offset = Vector2(0, -9)

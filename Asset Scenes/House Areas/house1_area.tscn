@@ -413,6 +413,7 @@ z_index = -1
 position = Vector2(-150, -131)
 
 [node name="WalkSpeedArea" type="Area2D" parent="."]
+visible = false
 script = ExtResource("29_j0c75")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WalkSpeedArea"]

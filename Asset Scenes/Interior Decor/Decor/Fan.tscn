@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4uh6vm5h5nds"]
+
+[ext_resource type="Texture2D" uid="uid://bcac501jrgq5g" path="res://Assets/House Interior/Fan.png" id="1_gkbri"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_reh2r"]
+radius = 3.0
+height = 14.0
+
+[node name="Gravel" type="Sprite2D"]
+position = Vector2(0, 1)
+texture = ExtResource("1_gkbri")
+offset = Vector2(0, -19)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(0, -2)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_reh2r")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://2ayidhdahvj6"]
+
+[ext_resource type="Texture2D" uid="uid://ok4uqm6ob1dm" path="res://Assets/House Interior/Dinner_Table.png" id="1_krc5y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_reh2r"]
+radius = 7.0
+height = 86.0
+
+[node name="Gravel" type="Sprite2D"]
+position = Vector2(0, -2)
+texture = ExtResource("1_krc5y")
+offset = Vector2(0, -16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -5)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_reh2r")

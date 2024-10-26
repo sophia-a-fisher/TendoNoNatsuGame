@@ -1,101 +1,19 @@
 res://default_env.tres
-res://Asset Scenes/Environment/Shrine/Shrine2.tscn
-res://Levels/VillageLevel.tscn
-res://Asset Scenes/Environment/Shrine/Tori_Gate.tscn
-res://Asset Scenes/Environment/Shrine/Shrine_RockDecor_2.tscn
-res://Asset Scenes/Environment/Ground Textures/Forest_Ground.tscn
-res://Asset Scenes/Environment/Ground Textures/Shrine_Ground.tscn
-res://Asset Scenes/Environment/Ground Textures/Park_Ground.tscn
-res://Asset Scenes/Environment/Shrine/Bamboo_1.tscn
-res://Asset Scenes/Environment/Shrine/Bamboo_2.tscn
-res://Asset Scenes/Environment/Shrine/Bamboo_3.tscn
-res://Asset Scenes/Environment/Shrine/Shrine_Tree.tscn
-res://Asset Scenes/Environment/Weeds Shakeable/shrine_weed1.tscn
-res://Asset Scenes/Environment/Weeds Shakeable/shrine_weed2.tscn
-res://Asset Scenes/Environment/Weeds Shakeable/shrine_weed3.tscn
-res://Asset Scenes/Environment/Garden/Garden Plants/garden_cabbage.tscn
-res://Asset Scenes/Environment/Weeds Shakeable/grass2.tscn
-res://Asset Scenes/House_Areas/shrine2_area.tscn
-res://Asset Scenes/Environment/Barriers/Rock_Small_BottomRight_Inner.tscn
-res://Asset Scenes/Environment/Barriers/Rock_Small_Right_Inner.tscn
-res://Asset Scenes/Environment/Barriers/Rock_Small_Left_Inner.tscn
-res://Asset Scenes/Environment/Barriers/Rock_Small_BottomLeft_Inner.tscn
-res://Asset Scenes/Environment/Cemetary/Grave1.tscn
-res://Asset Scenes/Environment/Cemetary/Grave2.tscn
-res://Asset Scenes/Environment/Cemetary/Grave3.tscn
-res://Asset Scenes/Environment/Cemetary/Grave4.tscn
-res://Asset Scenes/House_Areas/cemetary1_area.tscn
-res://Asset Scenes/Environment/Park/Slide.tscn
-res://Asset Scenes/Environment/Weeds Shakeable/grass1.tscn
-res://Asset Scenes/Environment/Weeds Shakeable/weed9.tscn
-res://Asset Scenes/House_Areas/house17_area.tscn
-res://Asset Scenes/House_Areas/walk_speed_area.gd
-res://Asset Scenes/House_Areas/house1_area.tscn
-res://Characters/MainPlayer.tscn
-res://Asset Scenes/House_Areas/shrine1_area.tscn
-res://Asset Scenes/House_Areas/house2_area.tscn
-res://Asset Scenes/House_Areas/house3_area.tscn
-res://Asset Scenes/House_Areas/park1_area.tscn
-res://Asset Scenes/House_Areas/house4_area.tscn
-res://Asset Scenes/House_Areas/house5_area.tscn
-res://Asset Scenes/House_Areas/park2_area.tscn
-res://Asset Scenes/House_Areas/park3_area.tscn
-res://Asset Scenes/House_Areas/house6_area.tscn
-res://Asset Scenes/House_Areas/house7_area.tscn
-res://Asset Scenes/House_Areas/house8_area.tscn
-res://Asset Scenes/House_Areas/house9_area.tscn
-res://Asset Scenes/House_Areas/park4_area.tscn
-res://Asset Scenes/House_Areas/house10_area.tscn
-res://Asset Scenes/House_Areas/house11_area.tscn
-res://Asset Scenes/House_Areas/house12_area.tscn
-res://Asset Scenes/House_Areas/shrine3_area.tscn
-res://Asset Scenes/House_Areas/house13_area.tscn
-res://Asset Scenes/House_Areas/house14_area.tscn
-res://Asset Scenes/House_Areas/house15_area.tscn
-res://Asset Scenes/House_Areas/park5_area.tscn
-res://Asset Scenes/House_Areas/house16_area.tscn
-res://Asset Scenes/House_Areas/shrine4_area.tscn
-res://Asset Scenes/House_Areas/park6_area.tscn
-res://Characters/Scripts/MainPlayer.gd
-res://Asset Scenes/Environment/Houses/House1.tscn
+res://Asset Scenes/House Interiors/house1_interior.tscn
 res://Asset Scenes/Environment/Houses/House_Entry.gd
-res://Asset Scenes/House_Interiors/house1_interior.tscn
-res://Asset Scenes/House Areas/house14_area.tscn
-res://Asset Scenes/Houses/House2.tscn
-res://Asset Scenes/House Areas/house2_area.tscn
+res://Levels/VillageLevel.tscn
+res://Asset Scenes/Interior Decor/Walls/DryWall.tscn
+res://Asset Scenes/Interior Decor/Floors/WoodFloor_Top.tscn
+res://Asset Scenes/House Areas/house1_area.tscn
 res://Asset Scenes/Houses/House1.tscn
 res://Asset Scenes/House Interiors/house2_interior.tscn
-res://Asset Scenes/House Interiors/house1_interior.tscn
-res://Asset Scenes/Houses/House17.tscn
-res://Asset Scenes/Houses/House16.tscn
-res://Asset Scenes/Houses/House15.tscn
-res://Asset Scenes/Houses/House14.tscn
-res://Asset Scenes/Houses/House13.tscn
-res://Asset Scenes/Houses/House12.tscn
-res://Asset Scenes/Houses/House11.tscn
-res://Asset Scenes/Houses/House10.tscn
-res://Asset Scenes/Houses/House9.tscn
-res://Asset Scenes/Houses/House8.tscn
-res://Asset Scenes/Houses/House7.tscn
-res://Asset Scenes/Houses/House6.tscn
-res://Asset Scenes/Houses/House5.tscn
-res://Asset Scenes/Houses/House4.tscn
-res://Asset Scenes/Houses/House3.tscn
-res://Asset Scenes/House Areas/house3_area.tscn
-res://Asset Scenes/House Areas/house4_area.tscn
-res://Asset Scenes/House Areas/house5_area.tscn
-res://Asset Scenes/House Areas/house6_area.tscn
-res://Asset Scenes/House Areas/house7_area.tscn
-res://Asset Scenes/House Areas/house8_area.tscn
-res://Asset Scenes/House Areas/house9_area.tscn
-res://Asset Scenes/House Areas/house10_area.tscn
-res://Asset Scenes/House Areas/house11_area.tscn
-res://Asset Scenes/House Areas/house12_area.tscn
-res://Asset Scenes/House Areas/house13_area.tscn
-res://Asset Scenes/House Areas/house15_area.tscn
-res://Asset Scenes/House Areas/house16_area.tscn
-res://Asset Scenes/House Areas/house17_area.tscn
 res://Asset Scenes/House Interiors/House_Exit.gd
+res://Characters/Scripts/GlobalPlayer.gd
+res://Levels/village_level.gd
+res://Characters/Scripts/MainPlayer.gd
+res://GUI/TransitionScreen.tscn
+res://GUI/transition_screen.gd
+res://Asset Scenes/House Interiors/house_interior.gd
 res://Asset Scenes/House Interiors/house17_interior.tscn
 res://Asset Scenes/House Interiors/house16_interior.tscn
 res://Asset Scenes/House Interiors/house15_interior.tscn
@@ -111,3 +29,42 @@ res://Asset Scenes/House Interiors/house6_interior.tscn
 res://Asset Scenes/House Interiors/house5_interior.tscn
 res://Asset Scenes/House Interiors/house4_interior.tscn
 res://Asset Scenes/House Interiors/house3_interior.tscn
+res://Asset Scenes/House Areas/house9_area.tscn
+res://Asset Scenes/House Areas/house11_area.tscn
+res://Levels/day_night_cycle.gd
+res://Assets/UI/DayNightTexture.tres
+res://Levels/GlobalEnviron.gd
+res://Asset Scenes/Interior Decor/Floors/GenkanFloor.tscn
+res://Asset Scenes/Interior Decor/Walls/BlackBackground.tscn
+res://Asset Scenes/Interior Decor/Walls/BlackBackgroundNoCollision.tscn
+res://Asset Scenes/Interior Decor/Floors/WoodFloor_Horiz.tscn
+res://Asset Scenes/Interior Decor/Floors/WoodFloor_Horiz_Half.tscn
+res://Asset Scenes/Interior Decor/Floors/WoodFloor_Horiz_Top.tscn
+res://Asset Scenes/Interior Decor/Floors/TatamiMat.tscn
+res://Asset Scenes/Interior Decor/Floors/TatamiMat_Vert.tscn
+res://Asset Scenes/Interior Decor/Walls/ShojiHalf_Left.tscn
+res://Asset Scenes/Interior Decor/Walls/ShojiHalf_Middle.tscn
+res://Asset Scenes/Interior Decor/Walls/ShojiHalf_Right.tscn
+res://Asset Scenes/Interior Decor/Walls/CollisionStandAlone.tscn
+res://Asset Scenes/Interior Decor/Floors/FloorTransitionBar.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton.tscn
+res://Asset Scenes/Interior Decor/Floors/WoodFloor_Half.tscn
+res://Asset Scenes/Interior Decor/Floors/WoodFloor.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton_Stack.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton_HalfStack.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton2.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton2_HalfStack.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton2_Stack.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton3_HalfStack.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton3_Stack.tscn
+res://Asset Scenes/Interior Decor/Decor/Zabuton3.tscn
+res://Asset Scenes/Interior Decor/Decor/Coffee_Table.tscn
+res://Asset Scenes/Interior Decor/Decor/Shoes1.tscn
+res://Asset Scenes/Interior Decor/Decor/Shoes2.tscn
+res://Asset Scenes/Interior Decor/Decor/Shoes3.tscn
+res://Asset Scenes/Interior Decor/Decor/Dinner_Table.tscn
+res://Asset Scenes/Interior Decor/Decor/Dinner_Chair.tscn
+res://Asset Scenes/Interior Decor/Decor/Dinner_Chair_Back.tscn
+res://Asset Scenes/Interior Decor/Decor/Dinner_Chair_Left.tscn
+res://Asset Scenes/Interior Decor/Decor/Waste_Bucket.tscn
+res://Asset Scenes/Interior Decor/Decor/Fan.tscn

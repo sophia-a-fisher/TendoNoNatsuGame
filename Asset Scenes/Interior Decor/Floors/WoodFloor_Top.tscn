@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://diqaruc5qmrcl"]
+
+[ext_resource type="Texture2D" uid="uid://qmoqigtu61vh" path="res://Assets/House Interior/Wood_Floor_Top.png" id="1_rhtm8"]
+
+[node name="Gravel" type="Sprite2D"]
+z_index = -2
+position = Vector2(0, -18)
+texture = ExtResource("1_rhtm8")

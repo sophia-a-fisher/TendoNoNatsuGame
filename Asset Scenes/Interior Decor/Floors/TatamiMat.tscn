@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://02pdoxwjrell"]
+
+[ext_resource type="Texture2D" uid="uid://23at6u18qnd6" path="res://Assets/House Interior/Tatami_Horiz.png" id="1_5jglo"]
+
+[node name="Gravel" type="Sprite2D"]
+z_index = -2
+position = Vector2(0, -18)
+texture = ExtResource("1_5jglo")

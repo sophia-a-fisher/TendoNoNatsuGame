@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://54b416bgx2iu"]
+
+[ext_resource type="Texture2D" uid="uid://c4q44dc8dyko3" path="res://Assets/House Interior/WallEdge_Bottom.png" id="1_trvff"]
+
+[node name="Bricks_Horiz" type="Sprite2D"]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(0, -1)
+texture = ExtResource("1_trvff")
+offset = Vector2(0, -4)
