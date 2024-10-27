@@ -126,6 +126,7 @@ position = Vector2(-905, 1052)
 position = Vector2(-784, 1050)
 
 [node name="Bricks_Horiz8" parent="." instance=ExtResource("11_2ij8q")]
+z_index = -1
 position = Vector2(-840.5, 1055.5)
 
 [node name="House1" parent="." instance=ExtResource("12_bf5bl")]
@@ -474,6 +475,7 @@ position = Vector2(-747, 1100)
 position = Vector2(-892, 1015)
 
 [node name="WalkSpeedArea" type="Area2D" parent="."]
+visible = false
 script = ExtResource("18_p76ui")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WalkSpeedArea"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://0hpu1n4vc1us"]
+[gd_scene load_steps=70 format=3 uid="uid://0hpu1n4vc1us"]
 
 [ext_resource type="PackedScene" uid="uid://b3xdl0gmx2p0a" path="res://Characters/MainPlayer.tscn" id="1"]
 [ext_resource type="Script" path="res://Levels/village_level.gd" id="1_44bah"]
@@ -38,6 +38,16 @@
 [ext_resource type="PackedScene" uid="uid://dccvhvwtxvo83" path="res://Asset Scenes/AI_Patrol_Point.tscn" id="36_0q86a"]
 [ext_resource type="Texture2D" uid="uid://en4impe7pevk" path="res://Assets/Characters/GIMP/Villager_2.png" id="36_am3tt"]
 [ext_resource type="Script" path="res://Asset Scenes/ai_patrol_point.gd" id="37_nfe22"]
+[ext_resource type="Texture2D" uid="uid://bvbi5ejo8jk0c" path="res://Assets/Characters/GIMP/Villager_3.png" id="37_rca4v"]
+[ext_resource type="Texture2D" uid="uid://btna27o61bg7h" path="res://Assets/Characters/GIMP/Villager_4.png" id="38_bi2g3"]
+[ext_resource type="Texture2D" uid="uid://dbserkqglkve8" path="res://Assets/Characters/GIMP/Villager_5.png" id="39_n3eyw"]
+[ext_resource type="Texture2D" uid="uid://d2ufi6nymc68r" path="res://Assets/Characters/GIMP/Villager_6.png" id="40_umt1h"]
+[ext_resource type="Texture2D" uid="uid://c7n2o130ycv6f" path="res://Assets/Characters/GIMP/Villager_7.png" id="41_g32bb"]
+[ext_resource type="Texture2D" uid="uid://brp6u61yysjgj" path="res://Assets/Characters/GIMP/Villager_8.png" id="42_bt2gm"]
+[ext_resource type="Texture2D" uid="uid://x57hnmv2x3w2" path="res://Assets/Characters/GIMP/Villager_9.png" id="43_css3x"]
+[ext_resource type="Texture2D" uid="uid://dgjendcid341o" path="res://Assets/Characters/GIMP/Villager_10.png" id="44_yaa21"]
+[ext_resource type="Texture2D" uid="uid://btstkeac577qb" path="res://Assets/Characters/GIMP/Villager_11.png" id="45_wadgd"]
+[ext_resource type="Texture2D" uid="uid://dwmsl0mlse0rt" path="res://Assets/Characters/GIMP/Villager_12.png" id="46_wigiv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jiond"]
 size = Vector2(324.5, 20)
@@ -454,6 +464,226 @@ libraries = {
 "": SubResource("AnimationLibrary_fhltx")
 }
 
+[node name="CharacterBody2D3" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(-1007, -243)
+script = ExtResource("34_cxmy0")
+next_point_array = [["49", "50", "51", "52", "53", "54", "55", "56", "57", "59", "60", "61", "62"], ["63"], ["62", "61", "60", "59", "58", "28", "27", "26", "23", "22", "46"], ["22", "23", "26", "27", "28", "58", "59", "57", "56", "55", "64"], ["55", "54", "53", "52", "51", "50", "49", "91"]]
+next_time_array = PackedFloat32Array(0.08, 0.12, 0.15, 0.22, 0.27)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D3"]
+position = Vector2(0, 2)
+texture = ExtResource("37_rca4v")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D3"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D3"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D4" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(-1042, 311)
+script = ExtResource("34_cxmy0")
+next_point_array = [["93", "94"], ["93", "95", "96", "97", "98", "99", "100", "70", "71", "72", "73", "74", "75"], ["76", "77"], ["76", "75", "78", "79", "80", "81", "82", "83", "84"], ["83", "85", "86", "87", "88"], ["89", "90", "79", "78", "74", "73", "72", "71", "70", "100", "99", "98", "97", "96", "95", "93", "92"]]
+next_time_array = PackedFloat32Array(0.05, 0.16, 0.19, 0.25, 0.29, 0.37)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D4"]
+position = Vector2(0, 2)
+texture = ExtResource("38_bi2g3")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D4"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D4"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D5" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(-1052, 662)
+script = ExtResource("34_cxmy0")
+next_point_array = [["102", "103", "104", "105"], ["104", "74", "75"], ["74", "73", "72", "71", "100", "99", "98", "97", "96", "95", "93", "92"]]
+next_time_array = PackedFloat32Array(0.09, 0.13, 0.18)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D5"]
+position = Vector2(0, 2)
+texture = ExtResource("39_n3eyw")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D5"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D5"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D6" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(-660, 793)
+script = ExtResource("34_cxmy0")
+next_point_array = [["107", "108"], ["107", "112", "113", "114", "117", "118", "119", "120", "121", "122"], ["121", "123", "124", "125", "126", "127", "128"], ["127", "126", "125", "124", "123", "121", "120", "119", "118", "117", "114", "113", "112", "107", "106"]]
+next_time_array = PackedFloat32Array(0.06, 0.14, 0.22, 0.29)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D6"]
+position = Vector2(0, 2)
+texture = ExtResource("40_umt1h")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D6"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D6"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D7" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(-433, 943)
+script = ExtResource("34_cxmy0")
+next_point_array = [["130", "132", "133", "134", "135"], ["134", "133", "132", "130", "129", "118", "119", "120", "121", "122"], ["121", "120", "119", "118", "117", "114", "113", "112", "107", "106"]]
+next_time_array = PackedFloat32Array(0.07, 0.12, 0.14)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D7"]
+position = Vector2(0, 2)
+texture = ExtResource("41_g32bb")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D7"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D7"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D8" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(-264, 1014)
+script = ExtResource("34_cxmy0")
+next_point_array = [["139", "141"], ["138", "137", "142", "143", "144", "145", "146", "147", "148"], ["147", "149"], ["147", "146", "150", "151"], ["150", "146", "145", "152", "153", "154"], ["153", "152", "145", "144", "143", "142", "137", "138", "139", "140"]]
+next_time_array = PackedFloat32Array(0.05, 0.11, 0.14, 0.19, 0.23, 0.28)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D8"]
+position = Vector2(0, 2)
+texture = ExtResource("42_bt2gm")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D8"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D8"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D9" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(-34, 1111)
+script = ExtResource("34_cxmy0")
+next_point_array = [["160"], ["161", "148"], ["161", "160"], ["159"]]
+next_time_array = PackedFloat32Array(0.05, 0.08, 0.13, 0.2)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D9"]
+position = Vector2(0, 2)
+texture = ExtResource("43_css3x")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D9"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D9"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D10" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(340, -92)
+script = ExtResource("34_cxmy0")
+next_point_array = [["163", "164", "165", "169", "170", "171"], ["170", "169", "166", "13", "19", "20", "172", "173", "174"], ["173", "172", "20", "19", "13", "166", "165", "164", "163", "162"]]
+next_time_array = PackedFloat32Array(0.08, 0.13, 0.17)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D10"]
+position = Vector2(0, 2)
+texture = ExtResource("44_yaa21")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D10"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D10"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D11" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(249, 106)
+script = ExtResource("34_cxmy0")
+next_point_array = [["179", "181", "182", "183", "184"], ["183", "182", "181", "179", "178", "177", "176", "175"], ["176", "177", "178", "179", "180"]]
+next_time_array = PackedFloat32Array(0.05, 0.13, 0.16)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D11"]
+position = Vector2(0, 2)
+texture = ExtResource("45_wadgd")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D11"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D11"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
+[node name="CharacterBody2D12" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(409, 378)
+script = ExtResource("34_cxmy0")
+next_point_array = [["187", "186", "189", "190"], ["189", "186", "191", "155", "156", "157", "158"], ["157", "156", "155", "191", "186", "187", "188"]]
+next_time_array = PackedFloat32Array(0.07, 0.16, 0.19)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D12"]
+position = Vector2(0, 2)
+texture = ExtResource("46_wigiv")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D12"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D12"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
 [node name="AiPatrolPoint" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
 position = Vector2(-9, -65)
 script = ExtResource("37_nfe22")
@@ -608,6 +838,741 @@ group_id = "31"
 position = Vector2(-789, -82)
 script = ExtResource("37_nfe22")
 group_id = "32"
+
+[node name="AiPatrolPoint49" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1006, -218)
+script = ExtResource("37_nfe22")
+group_id = "49"
+
+[node name="AiPatrolPoint91" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1007, -247)
+script = ExtResource("37_nfe22")
+group_id = "91"
+
+[node name="AiPatrolPoint50" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-963, -215)
+script = ExtResource("37_nfe22")
+group_id = "50"
+
+[node name="AiPatrolPoint51" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-952, -89)
+script = ExtResource("37_nfe22")
+group_id = "51"
+
+[node name="AiPatrolPoint52" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-952, 31)
+script = ExtResource("37_nfe22")
+group_id = "52"
+
+[node name="AiPatrolPoint53" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1054, 30)
+script = ExtResource("37_nfe22")
+group_id = "53"
+
+[node name="AiPatrolPoint54" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1049, 133)
+script = ExtResource("37_nfe22")
+group_id = "54"
+
+[node name="AiPatrolPoint55" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-972, 169)
+script = ExtResource("37_nfe22")
+group_id = "55"
+
+[node name="AiPatrolPoint64" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-967, 221)
+script = ExtResource("37_nfe22")
+group_id = "64"
+
+[node name="AiPatrolPoint92" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1041, 305)
+script = ExtResource("37_nfe22")
+group_id = "92"
+
+[node name="AiPatrolPoint93" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1039, 378)
+script = ExtResource("37_nfe22")
+group_id = "93"
+
+[node name="AiPatrolPoint94" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1017, 377)
+script = ExtResource("37_nfe22")
+group_id = "94"
+
+[node name="AiPatrolPoint95" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1038, 447)
+script = ExtResource("37_nfe22")
+group_id = "95"
+
+[node name="AiPatrolPoint96" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-968, 452)
+script = ExtResource("37_nfe22")
+group_id = "96"
+
+[node name="AiPatrolPoint97" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-966, 514)
+script = ExtResource("37_nfe22")
+group_id = "97"
+
+[node name="AiPatrolPoint98" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-911, 514)
+script = ExtResource("37_nfe22")
+group_id = "98"
+
+[node name="AiPatrolPoint99" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-907, 527)
+script = ExtResource("37_nfe22")
+group_id = "99"
+
+[node name="AiPatrolPoint100" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-781, 525)
+script = ExtResource("37_nfe22")
+group_id = "100"
+
+[node name="AiPatrolPoint101" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1052, 657)
+script = ExtResource("37_nfe22")
+group_id = "101"
+
+[node name="AiPatrolPoint102" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1052, 685)
+script = ExtResource("37_nfe22")
+group_id = "102"
+
+[node name="AiPatrolPoint103" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-941, 687)
+script = ExtResource("37_nfe22")
+group_id = "103"
+
+[node name="AiPatrolPoint104" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-810, 707)
+script = ExtResource("37_nfe22")
+group_id = "104"
+
+[node name="AiPatrolPoint105" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-807, 682)
+script = ExtResource("37_nfe22")
+group_id = "105"
+
+[node name="AiPatrolPoint106" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-660, 791)
+script = ExtResource("37_nfe22")
+group_id = "106"
+
+[node name="AiPatrolPoint107" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-658, 834)
+script = ExtResource("37_nfe22")
+group_id = "107"
+
+[node name="AiPatrolPoint108" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-657, 910)
+script = ExtResource("37_nfe22")
+group_id = "108"
+
+[node name="AiPatrolPoint109" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-726, 912)
+script = ExtResource("37_nfe22")
+group_id = "109"
+
+[node name="AiPatrolPoint110" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-727, 871)
+script = ExtResource("37_nfe22")
+group_id = "110"
+
+[node name="AiPatrolPoint111" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-862, 868)
+script = ExtResource("37_nfe22")
+group_id = "111"
+
+[node name="AiPatrolPoint112" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-593, 836)
+script = ExtResource("37_nfe22")
+group_id = "112"
+
+[node name="AiPatrolPoint113" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-515, 833)
+script = ExtResource("37_nfe22")
+group_id = "113"
+
+[node name="AiPatrolPoint114" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-455, 829)
+script = ExtResource("37_nfe22")
+group_id = "114"
+
+[node name="AiPatrolPoint115" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-526, 785)
+script = ExtResource("37_nfe22")
+group_id = "115"
+
+[node name="AiPatrolPoint116" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-630, 723)
+script = ExtResource("37_nfe22")
+group_id = "116"
+
+[node name="AiPatrolPoint117" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-398, 863)
+script = ExtResource("37_nfe22")
+group_id = "117"
+
+[node name="AiPatrolPoint118" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-326, 910)
+script = ExtResource("37_nfe22")
+group_id = "118"
+
+[node name="AiPatrolPoint119" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-303, 910)
+script = ExtResource("37_nfe22")
+group_id = "119"
+
+[node name="AiPatrolPoint120" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-305, 824)
+script = ExtResource("37_nfe22")
+group_id = "120"
+
+[node name="AiPatrolPoint121" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-306, 730)
+script = ExtResource("37_nfe22")
+group_id = "121"
+
+[node name="AiPatrolPoint122" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-306, 699)
+script = ExtResource("37_nfe22")
+group_id = "122"
+
+[node name="AiPatrolPoint123" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-232, 730)
+script = ExtResource("37_nfe22")
+group_id = "123"
+
+[node name="AiPatrolPoint124" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-237, 606)
+script = ExtResource("37_nfe22")
+group_id = "124"
+
+[node name="AiPatrolPoint125" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-255, 606)
+script = ExtResource("37_nfe22")
+group_id = "125"
+
+[node name="AiPatrolPoint126" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-256, 538)
+script = ExtResource("37_nfe22")
+group_id = "126"
+
+[node name="AiPatrolPoint127" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-257, 287)
+script = ExtResource("37_nfe22")
+group_id = "127"
+
+[node name="AiPatrolPoint128" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-184, 287)
+script = ExtResource("37_nfe22")
+group_id = "128"
+
+[node name="AiPatrolPoint129" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-340, 973)
+script = ExtResource("37_nfe22")
+group_id = "129"
+
+[node name="AiPatrolPoint130" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-430, 974)
+script = ExtResource("37_nfe22")
+group_id = "130"
+
+[node name="AiPatrolPoint131" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-431, 939)
+script = ExtResource("37_nfe22")
+group_id = "131"
+
+[node name="AiPatrolPoint132" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-442, 975)
+script = ExtResource("37_nfe22")
+group_id = "132"
+
+[node name="AiPatrolPoint133" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-442, 1025)
+script = ExtResource("37_nfe22")
+group_id = "133"
+
+[node name="AiPatrolPoint134" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-527, 1029)
+script = ExtResource("37_nfe22")
+group_id = "134"
+
+[node name="AiPatrolPoint135" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-527, 1073)
+script = ExtResource("37_nfe22")
+group_id = "135"
+
+[node name="AiPatrolPoint136" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-245, 942)
+script = ExtResource("37_nfe22")
+group_id = "136"
+
+[node name="AiPatrolPoint137" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-170, 976)
+script = ExtResource("37_nfe22")
+group_id = "137"
+
+[node name="AiPatrolPoint138" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-172, 1075)
+script = ExtResource("37_nfe22")
+group_id = "138"
+
+[node name="AiPatrolPoint139" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-260, 1075)
+script = ExtResource("37_nfe22")
+group_id = "139"
+
+[node name="AiPatrolPoint140" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-264, 1012)
+script = ExtResource("37_nfe22")
+group_id = "140"
+
+[node name="AiPatrolPoint141" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-227, 1104)
+script = ExtResource("37_nfe22")
+group_id = "141"
+
+[node name="AiPatrolPoint142" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-99, 1005)
+script = ExtResource("37_nfe22")
+group_id = "142"
+
+[node name="AiPatrolPoint143" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-6, 1042)
+script = ExtResource("37_nfe22")
+group_id = "143"
+
+[node name="AiPatrolPoint144" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(64, 1084)
+script = ExtResource("37_nfe22")
+group_id = "144"
+
+[node name="AiPatrolPoint159" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-34, 1108)
+script = ExtResource("37_nfe22")
+group_id = "159"
+
+[node name="AiPatrolPoint160" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-35, 1134)
+script = ExtResource("37_nfe22")
+group_id = "160"
+
+[node name="AiPatrolPoint161" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(59, 1133)
+script = ExtResource("37_nfe22")
+group_id = "161"
+
+[node name="AiPatrolPoint145" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(164, 1082)
+script = ExtResource("37_nfe22")
+group_id = "145"
+
+[node name="AiPatrolPoint146" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(245, 1087)
+script = ExtResource("37_nfe22")
+group_id = "146"
+
+[node name="AiPatrolPoint147" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(248, 1140)
+script = ExtResource("37_nfe22")
+group_id = "147"
+
+[node name="AiPatrolPoint148" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(172, 1146)
+script = ExtResource("37_nfe22")
+group_id = "148"
+
+[node name="AiPatrolPoint149" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(342, 1146)
+script = ExtResource("37_nfe22")
+group_id = "149"
+
+[node name="AiPatrolPoint150" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(353, 1087)
+script = ExtResource("37_nfe22")
+group_id = "150"
+
+[node name="AiPatrolPoint151" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(351, 873)
+script = ExtResource("37_nfe22")
+group_id = "151"
+
+[node name="AiPatrolPoint152" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(163, 952)
+script = ExtResource("37_nfe22")
+group_id = "152"
+
+[node name="AiPatrolPoint153" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(68, 953)
+script = ExtResource("37_nfe22")
+group_id = "153"
+
+[node name="AiPatrolPoint154" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(66, 890)
+script = ExtResource("37_nfe22")
+group_id = "154"
+
+[node name="AiPatrolPoint155" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(165, 726)
+script = ExtResource("37_nfe22")
+group_id = "155"
+
+[node name="AiPatrolPoint156" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(45, 728)
+script = ExtResource("37_nfe22")
+group_id = "156"
+
+[node name="AiPatrolPoint157" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(42, 665)
+script = ExtResource("37_nfe22")
+group_id = "157"
+
+[node name="AiPatrolPoint158" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(41, 637)
+script = ExtResource("37_nfe22")
+group_id = "158"
+
+[node name="AiPatrolPoint162" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(340, -96)
+script = ExtResource("37_nfe22")
+group_id = "162"
+
+[node name="AiPatrolPoint163" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(340, -80)
+script = ExtResource("37_nfe22")
+group_id = "163"
+
+[node name="AiPatrolPoint164" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(270, -78)
+script = ExtResource("37_nfe22")
+group_id = "164"
+
+[node name="AiPatrolPoint165" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(267, -156)
+script = ExtResource("37_nfe22")
+group_id = "165"
+
+[node name="AiPatrolPoint166" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(175, -156)
+script = ExtResource("37_nfe22")
+group_id = "166"
+
+[node name="AiPatrolPoint167" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(322, -159)
+script = ExtResource("37_nfe22")
+group_id = "167"
+
+[node name="AiPatrolPoint168" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(377, -180)
+script = ExtResource("37_nfe22")
+group_id = "168"
+
+[node name="AiPatrolPoint169" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(258, -157)
+script = ExtResource("37_nfe22")
+group_id = "169"
+
+[node name="AiPatrolPoint170" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(256, -254)
+script = ExtResource("37_nfe22")
+group_id = "170"
+
+[node name="AiPatrolPoint171" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(391, -260)
+script = ExtResource("37_nfe22")
+group_id = "171"
+
+[node name="AiPatrolPoint172" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(104, 95)
+script = ExtResource("37_nfe22")
+group_id = "172"
+
+[node name="AiPatrolPoint173" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(33, 95)
+script = ExtResource("37_nfe22")
+group_id = "173"
+
+[node name="AiPatrolPoint174" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-46, 101)
+script = ExtResource("37_nfe22")
+group_id = "174"
+
+[node name="AiPatrolPoint175" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-47, 259)
+script = ExtResource("37_nfe22")
+group_id = "175"
+
+[node name="AiPatrolPoint176" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(79, 257)
+script = ExtResource("37_nfe22")
+group_id = "176"
+
+[node name="AiPatrolPoint177" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(82, 176)
+script = ExtResource("37_nfe22")
+group_id = "177"
+
+[node name="AiPatrolPoint178" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(102, 138)
+script = ExtResource("37_nfe22")
+group_id = "178"
+
+[node name="AiPatrolPoint179" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(249, 133)
+script = ExtResource("37_nfe22")
+group_id = "179"
+
+[node name="AiPatrolPoint180" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(249, 102)
+script = ExtResource("37_nfe22")
+group_id = "180"
+
+[node name="AiPatrolPoint181" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(327, 135)
+script = ExtResource("37_nfe22")
+group_id = "181"
+
+[node name="AiPatrolPoint182" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(328, 85)
+script = ExtResource("37_nfe22")
+group_id = "182"
+
+[node name="AiPatrolPoint183" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(410, 85)
+script = ExtResource("37_nfe22")
+group_id = "183"
+
+[node name="AiPatrolPoint184" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(410, 128)
+script = ExtResource("37_nfe22")
+group_id = "184"
+
+[node name="AiPatrolPoint185" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(81, 331)
+script = ExtResource("37_nfe22")
+group_id = "185"
+
+[node name="AiPatrolPoint186" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(102, 407)
+script = ExtResource("37_nfe22")
+group_id = "186"
+
+[node name="AiPatrolPoint187" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(410, 411)
+script = ExtResource("37_nfe22")
+group_id = "187"
+
+[node name="AiPatrolPoint188" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(408, 375)
+script = ExtResource("37_nfe22")
+group_id = "188"
+
+[node name="AiPatrolPoint189" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-5, 410)
+script = ExtResource("37_nfe22")
+group_id = "189"
+
+[node name="AiPatrolPoint190" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-5, 387)
+script = ExtResource("37_nfe22")
+group_id = "190"
+
+[node name="AiPatrolPoint191" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(120, 504)
+script = ExtResource("37_nfe22")
+group_id = "191"
+
+[node name="AiPatrolPoint192" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-33, 507)
+script = ExtResource("37_nfe22")
+group_id = "192"
+
+[node name="AiPatrolPoint193" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-79, 507)
+script = ExtResource("37_nfe22")
+group_id = "193"
+
+[node name="AiPatrolPoint194" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-108, 467)
+script = ExtResource("37_nfe22")
+group_id = "194"
+
+[node name="AiPatrolPoint195" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-109, 422)
+script = ExtResource("37_nfe22")
+group_id = "195"
+
+[node name="AiPatrolPoint65" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-908, 292)
+script = ExtResource("37_nfe22")
+group_id = "65"
+
+[node name="AiPatrolPoint66" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-825, 375)
+script = ExtResource("37_nfe22")
+group_id = "66"
+
+[node name="AiPatrolPoint67" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-819, 416)
+script = ExtResource("37_nfe22")
+group_id = "67"
+
+[node name="AiPatrolPoint68" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-782, 445)
+script = ExtResource("37_nfe22")
+group_id = "68"
+
+[node name="AiPatrolPoint69" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-750, 488)
+script = ExtResource("37_nfe22")
+group_id = "69"
+
+[node name="AiPatrolPoint70" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-746, 520)
+script = ExtResource("37_nfe22")
+group_id = "70"
+
+[node name="AiPatrolPoint71" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-716, 551)
+script = ExtResource("37_nfe22")
+group_id = "71"
+
+[node name="AiPatrolPoint72" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-709, 651)
+script = ExtResource("37_nfe22")
+group_id = "72"
+
+[node name="AiPatrolPoint73" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-707, 713)
+script = ExtResource("37_nfe22")
+group_id = "73"
+
+[node name="AiPatrolPoint74" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-819, 819)
+script = ExtResource("37_nfe22")
+group_id = "74"
+
+[node name="AiPatrolPoint75" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-901, 818)
+script = ExtResource("37_nfe22")
+group_id = "75"
+
+[node name="AiPatrolPoint76" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1028, 822)
+script = ExtResource("37_nfe22")
+group_id = "76"
+
+[node name="AiPatrolPoint77" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1059, 785)
+script = ExtResource("37_nfe22")
+group_id = "77"
+
+[node name="AiPatrolPoint78" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-914, 912)
+script = ExtResource("37_nfe22")
+group_id = "78"
+
+[node name="AiPatrolPoint79" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-956, 958)
+script = ExtResource("37_nfe22")
+group_id = "79"
+
+[node name="AiPatrolPoint80" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-885, 969)
+script = ExtResource("37_nfe22")
+group_id = "80"
+
+[node name="AiPatrolPoint81" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-766, 972)
+script = ExtResource("37_nfe22")
+group_id = "81"
+
+[node name="AiPatrolPoint82" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-762, 1081)
+script = ExtResource("37_nfe22")
+group_id = "82"
+
+[node name="AiPatrolPoint83" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-838, 1083)
+script = ExtResource("37_nfe22")
+group_id = "83"
+
+[node name="AiPatrolPoint84" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-840, 1023)
+script = ExtResource("37_nfe22")
+group_id = "84"
+
+[node name="AiPatrolPoint85" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-835, 1139)
+script = ExtResource("37_nfe22")
+group_id = "85"
+
+[node name="AiPatrolPoint86" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-911, 1142)
+script = ExtResource("37_nfe22")
+group_id = "86"
+
+[node name="AiPatrolPoint87" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-891, 1169)
+script = ExtResource("37_nfe22")
+group_id = "87"
+
+[node name="AiPatrolPoint88" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1025, 1168)
+script = ExtResource("37_nfe22")
+group_id = "88"
+
+[node name="AiPatrolPoint89" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1127, 1160)
+script = ExtResource("37_nfe22")
+group_id = "89"
+
+[node name="AiPatrolPoint90" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-1126, 1129)
+script = ExtResource("37_nfe22")
+group_id = "90"
+
+[node name="AiPatrolPoint56" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-902, 162)
+script = ExtResource("37_nfe22")
+group_id = "56"
+
+[node name="AiPatrolPoint57" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-812, 121)
+script = ExtResource("37_nfe22")
+group_id = "57"
+
+[node name="AiPatrolPoint58" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-720, 100)
+script = ExtResource("37_nfe22")
+group_id = "58"
+
+[node name="AiPatrolPoint59" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-770, 110)
+script = ExtResource("37_nfe22")
+group_id = "59"
+
+[node name="AiPatrolPoint60" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-773, 16)
+script = ExtResource("37_nfe22")
+group_id = "60"
+
+[node name="AiPatrolPoint61" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-850, 11)
+script = ExtResource("37_nfe22")
+group_id = "61"
+
+[node name="AiPatrolPoint62" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-860, -55)
+script = ExtResource("37_nfe22")
+group_id = "62"
+
+[node name="AiPatrolPoint63" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
+position = Vector2(-864, -253)
+script = ExtResource("37_nfe22")
+group_id = "63"
 
 [node name="AiPatrolPoint33" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
 position = Vector2(-710, -167)
