@@ -13,6 +13,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	time += delta
+	GlobalEnviron.time = time
 	var value = (sin(sin_coefficient * (time - PI/2)) + 1.0) / 2.0
 	#if self and gradient:
 	self.color = gradient.gradient.sample(value)
