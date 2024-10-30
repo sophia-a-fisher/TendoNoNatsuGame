@@ -1,5 +1,5 @@
 res://default_env.tres
 res://Characters/MainPlayer.tscn
 res://Assets/UI/DayNightTexture.tres
-res://Levels/VillageLevel.tscn
 res://Asset Scenes/House Areas/park3_area.tscn
+res://Levels/VillageLevel.tscn
