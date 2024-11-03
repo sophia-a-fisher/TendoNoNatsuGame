@@ -1,0 +1,5 @@
+Key,Speaker,Dialog,Sprite,Next Key,Choice Key
+GEN_Mable_00_0,CTRANS_Mable,TRANS_00000000,Head_Villager1,NA,NA
+GEN_Mable_01_0,CTRANS_Mable,TRANS_00000001,Head_Villager1,NA,NA
+GEN_Hideji_00_0,CTRANS_Hideji,TRANS_00000002,Head_Villager2,GEN_Hideji_00_1,NA
+GEN_Hideji_00_1,CTRANS_Hideji,TRANS_00000003,Head_Villager2,NA,NA

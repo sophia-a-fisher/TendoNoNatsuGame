@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d307qsdnl0lw"
+
+[deps]
+
+files=["res://Dialog/Charater Name Translations - Sheet1.English.translation", "res://Dialog/Charater Name Translations - Sheet1.Japanese.translation"]
+
+source_file="res://Dialog/Charater Name Translations - Sheet1.csv"
+dest_files=["res://Dialog/Charater Name Translations - Sheet1.English.translation", "res://Dialog/Charater Name Translations - Sheet1.Japanese.translation"]
+
+[params]
+
+compress=true
+delimiter=0

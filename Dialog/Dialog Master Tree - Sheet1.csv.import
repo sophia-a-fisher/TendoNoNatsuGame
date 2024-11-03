@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c3sh37hgk8yr0"
+
+[deps]
+
+files=["res://Dialog/Dialog Master Tree - Sheet1.Speaker.translation", "res://Dialog/Dialog Master Tree - Sheet1.Dialog.translation", "res://Dialog/Dialog Master Tree - Sheet1.Sprite.translation", "res://Dialog/Dialog Master Tree - Sheet1.Next Key.translation", "res://Dialog/Dialog Master Tree - Sheet1.Choice Key.translation"]
+
+source_file="res://Dialog/Dialog Master Tree - Sheet1.csv"
+dest_files=["res://Dialog/Dialog Master Tree - Sheet1.Speaker.translation", "res://Dialog/Dialog Master Tree - Sheet1.Dialog.translation", "res://Dialog/Dialog Master Tree - Sheet1.Sprite.translation", "res://Dialog/Dialog Master Tree - Sheet1.Next Key.translation", "res://Dialog/Dialog Master Tree - Sheet1.Choice Key.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -52,7 +52,7 @@
 [ext_resource type="Texture2D" uid="uid://bcfmiuuk86g74" path="res://Assets/Characters/GIMP/Villager_14.png" id="48_30bom"]
 [ext_resource type="Texture2D" uid="uid://cuilaag80fmtn" path="res://Assets/Characters/GIMP/Villager_16.png" id="49_g4e7p"]
 [ext_resource type="Texture2D" uid="uid://4pkqhf4d6lvg" path="res://Assets/Characters/GIMP/Villager_17.png" id="50_0dx12"]
-[ext_resource type="Texture2D" uid="uid://cmbkvkp176yo4" path="res://Assets/Characters/GIMP/DialogBox.png" id="51_a1u2j"]
+[ext_resource type="Texture2D" uid="uid://difc8m16kohl0" path="res://Assets/Characters/GIMP/Villager_15.png" id="50_i7yrp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jiond"]
 size = Vector2(324.5, 20)
@@ -755,6 +755,28 @@ libraries = {
 "": SubResource("AnimationLibrary_fhltx")
 }
 
+[node name="CharacterBody2D17" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
+y_sort_enabled = true
+position = Vector2(-544, 543)
+script = ExtResource("34_cxmy0")
+next_point_array = [["209", "210"], ["209", "211"], ["209", "208"]]
+next_time_array = PackedFloat32Array(0.09, 0.13, 0.22)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D17"]
+position = Vector2(0, 2)
+texture = ExtResource("50_i7yrp")
+offset = Vector2(0, -15)
+hframes = 6
+vframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorting/Villager1/CharacterBody2D17"]
+shape = SubResource("CapsuleShape2D_rpx8s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sorting/Villager1/CharacterBody2D17"]
+libraries = {
+"": SubResource("AnimationLibrary_fhltx")
+}
+
 [node name="CharacterBody2D16" type="CharacterBody2D" parent="Sorting/Villager1" groups=["Villager"]]
 y_sort_enabled = true
 position = Vector2(41, 644)
@@ -776,11 +798,6 @@ shape = SubResource("CapsuleShape2D_rpx8s")
 libraries = {
 "": SubResource("AnimationLibrary_fhltx")
 }
-
-[node name="DialogBox" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D16"]
-z_index = 4
-position = Vector2(-1, -340)
-texture = ExtResource("51_a1u2j")
 
 [node name="AiPatrolPoint" parent="Sorting/Villager1" instance=ExtResource("36_0q86a")]
 position = Vector2(-9, -65)
