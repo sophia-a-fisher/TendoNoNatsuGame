@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1oo5hrwe7nuy"
-path="res://.godot/imported/IshiguraDetail1.png-83b00c7828965df460bfe9fc994c43d7.ctex"
+uid="uid://ce3jskw2ohyo8"
+path="res://.godot/imported/FrontBackSAnimTemplate.png-48d19cd49d52e479c0dd164045a19d32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Map/IshiguraDetail1.png"
-dest_files=["res://.godot/imported/IshiguraDetail1.png-83b00c7828965df460bfe9fc994c43d7.ctex"]
+source_file="res://Assets/Characters/GIMP/FrontBackSAnimTemplate.png"
+dest_files=["res://.godot/imported/FrontBackSAnimTemplate.png-48d19cd49d52e479c0dd164045a19d32.ctex"]
 
 [params]
 

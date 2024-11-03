@@ -65,11 +65,16 @@ func _move_to_point(target_path : Array, delta: float) -> void:
 	direction = next_position - global_position
 	direction = direction.normalized()
 	velocity = direction * speed * delta
-	
-	if velocity.x < 0:
-		anim_player.play("walk_left")
-	elif velocity.x > 0:
-		anim_player.play("walk_right")
+	if abs(velocity.y) <= abs(velocity.x):
+		if velocity.x < 0:
+			anim_player.play("walk_left")
+		elif velocity.x > 0:
+			anim_player.play("walk_right")
+	else:
+		if velocity.y < 0:
+			anim_player.play("walk_up")
+		elif velocity.y > 0:
+			anim_player.play("walk_down")
 	
 	move_and_slide()
 	
@@ -81,8 +86,14 @@ func _move_to_point(target_path : Array, delta: float) -> void:
 			next_time_idx += 1
 			path_idx = 0
 			
-			if velocity.x < 0:
-				anim_player.play("idle_left")
-			elif velocity.x > 0:
-				anim_player.play("idle_right")
+			if (anim_player.current_animation == "walk_left") or (anim_player.current_animation == "walk_right"):
+				if velocity.x < 0:
+					anim_player.play("idle_left")
+				elif velocity.x > 0:
+					anim_player.play("idle_right")
+			else:
+				if velocity.y < 0:
+					anim_player.play("idle_up")
+				elif velocity.y > 0:
+					anim_player.play("idle_down")
 		

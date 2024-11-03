@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1oo5hrwe7nuy"
-path="res://.godot/imported/IshiguraDetail1.png-83b00c7828965df460bfe9fc994c43d7.ctex"
+uid="uid://dpjl7rdjfn037"
+path="res://.godot/imported/Villager1Protrait.png-c16fd1f3b1470c9c827d0dd3a4a3a134.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Map/IshiguraDetail1.png"
-dest_files=["res://.godot/imported/IshiguraDetail1.png-83b00c7828965df460bfe9fc994c43d7.ctex"]
+source_file="res://Assets/Characters/GIMP/Villager1Protrait.png"
+dest_files=["res://.godot/imported/Villager1Protrait.png-c16fd1f3b1470c9c827d0dd3a4a3a134.ctex"]
 
 [params]
 
