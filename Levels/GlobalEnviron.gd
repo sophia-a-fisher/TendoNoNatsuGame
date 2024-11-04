@@ -1,5 +1,7 @@
 extends Node
 var time : float = 0.0
+var time_paused : bool = false
+var camera_zoom : float = 3.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

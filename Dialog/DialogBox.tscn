@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://bctp45djl5e5g"]
+
+[ext_resource type="Texture2D" uid="uid://cmbkvkp176yo4" path="res://Assets/Characters/GIMP/DialogBox.png" id="1_fni2v"]
+[ext_resource type="Script" path="res://Dialog/dialog_box.gd" id="1_s8ro1"]
+
+[sub_resource type="FontFile" id="FontFile_t6jpb"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/1/0/ascent = 0.0
+cache/0/1/0/descent = 0.0
+cache/0/1/0/underline_position = 0.0
+cache/0/1/0/underline_thickness = 0.0
+cache/0/1/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+
+[node name="DialogBox" type="Control"]
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_s8ro1")
+
+[node name="Background Art" type="Sprite2D" parent="."]
+texture = ExtResource("1_fni2v")
+
+[node name="Character Name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 44.0
+offset_right = 230.72
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_t6jpb")
+theme_override_font_sizes/font_size = 15
+text = "hellor"
+horizontal_alignment = 1
+
+[node name="Dialog" type="Label" parent="."]
+layout_mode = 0
+offset_left = -230.0
+offset_top = -61.0
+offset_right = 67.28
+offset_bottom = 62.32
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 15
+text = "Testing this is going to work."
+autowrap_mode = 2
+
+[node name="Character Head" type="Sprite2D" parent="."]
+z_index = 12
+position = Vector2(166, -13)

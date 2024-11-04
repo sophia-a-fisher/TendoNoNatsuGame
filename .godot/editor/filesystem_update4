@@ -17,3 +17,15 @@ res://GUI/transition_screen.gd
 res://Levels/villager_path_follow.gd
 res://Levels/village_level.gd
 res://Asset Scenes/House Areas/walk_speed_area.gd
+res://Dialog/DialogBox.tscn
+res://Dialog/Dialog_Manager.gd
+res://Dialog/dialog_box.gd
+res://Dialog/Dialog Master Tree - Sheet1.Speaker.translation
+res://Dialog/Dialog Master Tree - Sheet1.Dialog.translation
+res://Dialog/Dialog Master Tree - Sheet1.Sprite.translation
+res://Dialog/Dialog Master Tree - Sheet1.Next Key.translation
+res://Dialog/Dialog Master Tree - Sheet1.Choice Key.translation
+res://Dialog/Charater Name Translations - Sheet1.English.translation
+res://Dialog/Dialog Translations - Sheet1.English.translation
+res://Dialog/Charater Name Translations - Sheet1.Japanese.translation
+res://Dialog/Dialog Translations - Sheet1.Japanese.translation

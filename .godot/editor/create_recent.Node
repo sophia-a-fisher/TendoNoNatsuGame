@@ -1,7 +1,10 @@
-Label
 Sprite2D
-NavigationAgent2D
+Label
+Control
+CanvasLayer
 CollisionShape2D
+Area2D
+NavigationAgent2D
 CharacterBody2D
 NavigationRegion2D
 PathFollow2D
@@ -9,7 +12,3 @@ Path2D
 Node2D
 StaticBody2D
 CanvasModulate
-AnimationPlayer
-ColorRect
-CanvasLayer
-Area2D

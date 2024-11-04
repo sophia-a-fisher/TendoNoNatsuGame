@@ -1,5 +1,5 @@
 extends Node
-var player_position =  Vector2(-10, -99)
+var player_position =  Vector2(0, 0)
 var move_speed : float = 35
 var stroll_speed: float = 35
 

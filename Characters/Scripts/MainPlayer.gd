@@ -8,21 +8,45 @@ extends CharacterBody2D
 @export var input_enabled : bool = true
 
 @onready var animation_tree = $AnimationTree
+@onready var animation_player = $AnimationPlayer
 @onready var state_machine = animation_tree.get("parameters/playback")
 
-#parameters/Idle/blend_position
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+# Holds references to nearby NPCs
+var nearby_villagers = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#print("Animation tree active" + str(animation_tree.active))
+	# Connect the interaction area's signals
+	$Interaction_Area.body_entered.connect(_on_area_body_entered)
+	$Interaction_Area.body_exited.connect(_on_area_body_exited)
 	move_speed = walk_speed
 	update_animation_paramaters(starting_dir)
+	DialogManager._set_player(self)
+	
+func _on_area_body_entered(body):
+	# Check if the body has the "villager" tag
+	if body.is_in_group("Villager"):
+		nearby_villagers.append(body)
 
+func _on_area_body_exited(body):
+	# Remove the NPC from the list if it exits the interaction range
+	if body.is_in_group("Villager"):
+		nearby_villagers.erase(body)
+
+# Function to check for NPC interaction when 'E' is pressed
+func check_for_npc_interaction():
+	if nearby_villagers.size() > 0:
+		# Get the first NPC in range and start dialog with it
+		var npc = nearby_villagers[0]  # Choose the first NPC in the list (or implement a selection logic if needed)
+		if npc != null:
+			var gen_key = DialogManager.get_generic_key(npc.dialog_prefix)  # Pass the NPC to the dialog manager
+			if gen_key != "NA":
+				npc.pause_movement()
+				DialogManager.start_dialog(gen_key)
+				
+func unpause_npc():
+	var npc = nearby_villagers[0]
+	npc.movement_pause = false
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	# Only want to handle input if accepting
