@@ -78,15 +78,17 @@ func show_dialog(master_key: String):
 
 # Handle input events for advancing dialog or interacting with NPC
 func _input(event):
-	if event.is_action_pressed("ui_select"):
+	if event.is_action_pressed("ui_talk"):
 		if not dialog_active:
 			player.check_for_npc_interaction()
-	elif dialog_active and event.is_action_pressed("ui_accept"):
-		if typing:
-			typing = false
-			dialog_box_instance.set_dialog_text()
 		else:
-			advance_dialog()
+			if typing:
+				typing = false
+				dialog_box_instance.set_dialog_text()
+			else:
+				advance_dialog()
+	#elif dialog_active and event.is_action_pressed("ui_accept"):
+		
 		
 # Advance dialog
 func advance_dialog():

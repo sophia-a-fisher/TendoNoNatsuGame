@@ -759,7 +759,7 @@ dialog_prefix = "Tomiko"
 
 [node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D15"]
 position = Vector2(0, 2)
-texture = ExtResource("49_g4e7p")
+texture = ExtResource("50_i7yrp")
 offset = Vector2(0, -15)
 hframes = 6
 vframes = 8
@@ -782,7 +782,7 @@ dialog_prefix = "Domingo"
 
 [node name="Sprite2D" type="Sprite2D" parent="Sorting/Villager1/CharacterBody2D17"]
 position = Vector2(0, 2)
-texture = ExtResource("50_i7yrp")
+texture = ExtResource("49_g4e7p")
 offset = Vector2(0, -15)
 hframes = 6
 vframes = 8

@@ -439,6 +439,10 @@ position = Vector2(-278, 70)
 [node name="Gravel42" parent="Sorting" instance=ExtResource("41_l1a20")]
 position = Vector2(-41, 52)
 
+[node name="Bricks_Horiz71" parent="Sorting" instance=ExtResource("20_f1has")]
+z_index = 2
+position = Vector2(-222, 173)
+
 [node name="Gravel43" parent="Sorting" instance=ExtResource("42_7wj3f")]
 position = Vector2(-28, 50)
 
@@ -449,9 +453,5 @@ script = ExtResource("21_g4w34")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Exitway"]
 position = Vector2(-190.5, 68)
 shape = SubResource("RectangleShape2D_2omc8")
-
-[node name="Bricks_Horiz" parent="Exitway" instance=ExtResource("20_f1has")]
-z_index = 2
-position = Vector2(-191, 65)
 
 [connection signal="body_entered" from="Exitway" to="Exitway" method="_on_body_entered"]
