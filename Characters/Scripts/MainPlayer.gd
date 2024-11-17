@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var stroll_speed: float = 35
-@export var walk_speed: float = 50
-@export var sprint_speed: float = 70
+@export var stroll_speed: float = 50
+@export var walk_speed: float = 70
+@export var sprint_speed: float = 100
 @export var move_speed : float
 @export var starting_dir : Vector2 = Vector2(0, .5)
 @export var input_enabled : bool = true
@@ -68,7 +68,7 @@ func _process(delta):
 			if move_speed == sprint_speed:
 				move_speed = walk_speed
 			
-		var velocity = input_direction * move_speed * delta * 100
+		var velocity = input_direction * move_speed
 		
 		# Updating player position according to velocity
 		set_velocity(velocity)

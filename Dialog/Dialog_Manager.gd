@@ -11,7 +11,7 @@ var typing : bool = false
 var dialogs = {}
 var character_names = {}
 var master_tree = {}
-var LANG = "English"
+var LANG = "Japanese"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -73,7 +73,7 @@ func show_dialog(master_key: String):
 	dialog_box_instance = dialog_box_scene.instantiate()
 
 	# Add the dialog box to the CanvasLayer (which is in screen space)
-	var hud_layer = get_tree().root.get_node("VillageLevel/HUD")  # Adjust path to your CanvasLayer node
+	var hud_layer = HUD
 	hud_layer.add_child(dialog_box_instance)
 
 # Handle input events for advancing dialog or interacting with NPC

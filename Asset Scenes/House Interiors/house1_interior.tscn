@@ -53,6 +53,8 @@ z_index = 1
 y_sort_enabled = true
 script = ExtResource("1_4g1g1")
 
+[node name="HUD" type="CanvasLayer" parent="."]
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-222, 157)
 zoom = Vector2(3, 3)
@@ -72,6 +74,9 @@ move_speed = 45.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Sorting/MainPlayer"]
 remote_path = NodePath("../../../Camera2D")
+
+[node name="VillagerContainer" type="Node2D" parent="Sorting"]
+y_sort_enabled = true
 
 [node name="Bricks_Horiz" parent="Sorting" instance=ExtResource("4_81t0p")]
 position = Vector2(-294, 17)

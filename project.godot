@@ -14,6 +14,7 @@ config/name="TendoNoNatsu"
 run/main_scene="res://Levels/VillageLevel.tscn"
 config/features=PackedStringArray("4.3")
 boot_splash/bg_color=Color(0.0253638, 0.0253638, 0.0253638, 1)
+boot_splash/image="res://GUI/kudo_logo.png"
 config/icon="res://icon.png"
 
 [autoload]
@@ -22,6 +23,8 @@ GlobalEnviron="*res://Levels/GlobalEnviron.gd"
 GlobalPlayer="*res://Characters/Scripts/GlobalPlayer.gd"
 TransitionScreen="*res://GUI/TransitionScreen.tscn"
 DialogManager="*res://Dialog/Dialog_Manager.gd"
+VillagerManager="*res://Levels/VillagerManager.gd"
+HUD="*res://GUI/HUD.tscn"
 
 [display]
 

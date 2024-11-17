@@ -20,6 +20,8 @@ var created_patrol_pos : bool = false
 var path_idx : int = 0
 @export var dialog_prefix : String = ""
 var movement_pause = false
+# temporary variable to get villager spawning correctly
+var first_move = true
 
 func _ready() -> void:
 	# Starting the AI off idling
@@ -33,8 +35,10 @@ func _create_patrol_point_positions() -> void:
 			position_array = next_point_positions[0]
 			
 		for path_group_id in path_array:
-			var node = get_tree().get_nodes_in_group(path_group_id)[0]
-			position_array.append(node.position)
+#			For now we will ignore if we are in the house interior
+			if get_tree().get_nodes_in_group(path_group_id):
+				var node = get_tree().get_nodes_in_group(path_group_id)[0]
+				position_array.append(node.position)
 		if first_elem:
 			first_elem = false
 		else:
@@ -71,6 +75,13 @@ func pause_movement():
 		anim_player.play("idle_down") 
 	
 func _move_to_point(target_path : Array, delta: float) -> void:		
+	# Temporary fix to get villagers spawning into village level initially
+	if first_move:
+		if (target_path.size() == 0):
+			VillagerManager.update_villager_state(dialog_prefix, VillagerManager.SceneType.VILLAGE)
+			queue_free()
+			return
+		first_move = false
 	#nav.target_position = target_position
 	var next_position = target_path[path_idx]
 	

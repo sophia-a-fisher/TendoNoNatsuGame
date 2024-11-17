@@ -579,7 +579,6 @@ position = Vector2(-642, 38)
 [node name="Gravel53" parent="." instance=ExtResource("30_dsfux")]
 z_index = -1
 position = Vector2(-572, 7)
-rotation = -0.791066
 
 [node name="Gravel54" parent="." instance=ExtResource("36_tw6bx")]
 z_index = -1

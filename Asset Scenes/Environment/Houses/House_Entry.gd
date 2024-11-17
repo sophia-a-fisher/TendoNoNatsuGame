@@ -7,22 +7,7 @@ extends Area2D
 func _ready():
 	#spawn_player(spawn_location)
 	pass
-
-#func spawn_player(position: Vector2):
-	#var sorting_node = $Sorting  # Reference the "Sorting" node
-	#if sorting_node:
-	#	var player = player_scene.instantiate()  # Create an instance of the player
-	#	sorting_node.add_child(player)  # Add the player to the "Sorting" node
-	#	player.position = position  # Set the player's position
-	#	player.y_sort_enabled = true
-	#	player.z_index = 0
-		
-		# Add RemoteTransform2D to the player
-	#	var remote_transform = RemoteTransform2D.new()  # Create the RemoteTransform2D instance
-	#	player.add_child(remote_transform)  # Add it as a child of the player   
-	# Example of setting the RemoteTransform2D properties
-	#	remote_transform.remote_path = get_node("Camera2D").get_path()
-
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
@@ -32,9 +17,10 @@ func _on_body_entered(body: Node2D) -> void:
 		switchToHouseInterior(body)
 	
 func switchToHouseInterior(body: Node2D) -> void:
+	GlobalPlayer.update_position_doorway(body) 
 	TransitionScreen.transition()
 	await TransitionScreen.on_transition_finished
-	var villageLevel = get_parent().get_parent().get_parent().get_parent()
+	var villageLevel = get_parent().get_parent().get_parent().get_parent().get_parent()
 	GlobalEnviron.time = villageLevel.get_node("CanvasModulate").time
 	
 	if is_in_group("House1_Entry"):
