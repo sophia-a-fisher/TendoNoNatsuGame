@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://ooqkypnn6of6" path="res://Asset Scenes/Environment/Weeds Shakeable/grass2.tscn" id="20_q41as"]
 [ext_resource type="PackedScene" uid="uid://137j6bo4l52i" path="res://Asset Scenes/Environment/Weeds Shakeable/grass3.tscn" id="21_8jq7y"]
 [ext_resource type="PackedScene" uid="uid://cyfbouv2yrkqq" path="res://Asset Scenes/Houses/House15.tscn" id="21_85pwg"]
-[ext_resource type="Script" path="res://Asset Scenes/House Areas/walk_speed_area.gd" id="22_eith5"]
+[ext_resource type="Script" path="res://Scripts/Misc/WalkSpeedArea.gd" id="22_eith5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wfasf"]
 size = Vector2(179, 218)

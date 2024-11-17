@@ -32,7 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://dfprfucnyvmct" path="res://Asset Scenes/Environment/Weeds Shakeable/weed9.tscn" id="31_p7fn5"]
 [ext_resource type="PackedScene" uid="uid://chrocuqebpi34" path="res://Asset Scenes/Environment/Trees/tree_3_1.tscn" id="32_d8n02"]
 [ext_resource type="PackedScene" uid="uid://dh7q68sb1stp6" path="res://Asset Scenes/Environment/Vehicles/motorcycle.tscn" id="33_3ki6j"]
-[ext_resource type="Script" path="res://Asset Scenes/House Areas/walk_speed_area.gd" id="34_kfc4k"]
+[ext_resource type="Script" path="res://Scripts/Misc/WalkSpeedArea.gd" id="34_kfc4k"]
 [ext_resource type="PackedScene" uid="uid://cxnqli0rdomcp" path="res://Asset Scenes/Houses/House10.tscn" id="34_s6d87"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wdq07"]

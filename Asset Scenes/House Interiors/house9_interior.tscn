@@ -1,7 +1,7 @@
 [gd_scene load_steps=46 format=3 uid="uid://clmlk2rdni1b1"]
 
 [ext_resource type="PackedScene" uid="uid://b3xdl0gmx2p0a" path="res://Characters/MainPlayer.tscn" id="1_ilcab"]
-[ext_resource type="Script" path="res://Asset Scenes/House Interiors/house_interior.gd" id="1_t0eya"]
+[ext_resource type="Script" path="res://Scripts/Scenes/HouseScene.gd" id="1_t0eya"]
 [ext_resource type="PackedScene" uid="uid://g52pvmqr0tgg" path="res://Asset Scenes/Interior Decor/Walls/DryWall.tscn" id="3_c7qbs"]
 [ext_resource type="PackedScene" uid="uid://n10vwicfdhn7" path="res://Asset Scenes/Interior Decor/Walls/ShojiFull_Left.tscn" id="4_ideb6"]
 [ext_resource type="PackedScene" uid="uid://u1ifogx3krvl" path="res://Asset Scenes/Interior Decor/Walls/ShojiFull_Middle.tscn" id="5_h85uo"]
@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://fcnvjfvrx84l" path="res://Asset Scenes/Interior Decor/Floors/WoodFloor.tscn" id="18_x46qs"]
 [ext_resource type="PackedScene" uid="uid://diqaruc5qmrcl" path="res://Asset Scenes/Interior Decor/Floors/WoodFloor_Top.tscn" id="19_sx2kl"]
 [ext_resource type="PackedScene" uid="uid://10g12vnm66wh" path="res://Asset Scenes/Interior Decor/Floors/GenkanFloor.tscn" id="20_pkric"]
-[ext_resource type="Script" path="res://Asset Scenes/House Interiors/House_Exit.gd" id="21_25g05"]
+[ext_resource type="Script" path="res://Scripts/Misc/HouseExit.gd" id="21_25g05"]
 [ext_resource type="Texture2D" uid="uid://c4q44dc8dyko3" path="res://Assets/House Interior/WallEdge_Bottom.png" id="21_rp2uu"]
 [ext_resource type="Texture2D" uid="uid://chf7ru20tkhbe" path="res://Assets/House Interior/WallEdge_BottomRight.png" id="22_e30jb"]
 [ext_resource type="PackedScene" uid="uid://02pdoxwjrell" path="res://Asset Scenes/Interior Decor/Floors/TatamiMat.tscn" id="23_v88px"]

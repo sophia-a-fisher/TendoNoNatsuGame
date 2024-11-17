@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bctp45djl5e5g"]
 
 [ext_resource type="Texture2D" uid="uid://cmbkvkp176yo4" path="res://Assets/Characters/GIMP/DialogBox.png" id="1_fni2v"]
-[ext_resource type="Script" path="res://Dialog/dialog_box.gd" id="1_s8ro1"]
+[ext_resource type="Script" path="res://Scripts/Misc/DialogBox.gd" id="1_s8ro1"]
 
 [sub_resource type="FontFile" id="FontFile_t6jpb"]
 subpixel_positioning = 0

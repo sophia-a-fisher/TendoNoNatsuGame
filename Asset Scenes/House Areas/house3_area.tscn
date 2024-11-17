@@ -18,7 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://ooqkypnn6of6" path="res://Asset Scenes/Environment/Weeds Shakeable/grass2.tscn" id="18_viccv"]
 [ext_resource type="PackedScene" uid="uid://137j6bo4l52i" path="res://Asset Scenes/Environment/Weeds Shakeable/grass3.tscn" id="19_6ru00"]
 [ext_resource type="PackedScene" uid="uid://cs4c5fbxcrf8" path="res://Asset Scenes/Environment/Bushes/bush_2_1.tscn" id="20_8s3g6"]
-[ext_resource type="Script" path="res://Asset Scenes/House Areas/walk_speed_area.gd" id="20_30lyn"]
+[ext_resource type="Script" path="res://Scripts/Misc/WalkSpeedArea.gd" id="20_30lyn"]
 [ext_resource type="PackedScene" uid="uid://dh7q68sb1stp6" path="res://Asset Scenes/Environment/Vehicles/motorcycle.tscn" id="21_686si"]
 [ext_resource type="PackedScene" uid="uid://c73vuel06j510" path="res://Asset Scenes/Houses/House3.tscn" id="21_kqqts"]
 

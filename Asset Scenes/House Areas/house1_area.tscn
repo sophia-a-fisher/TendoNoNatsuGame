@@ -28,7 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://dqlu6u3qt55o6" path="res://Asset Scenes/Environment/Ground Textures/gravel_clump.tscn" id="26_aso2r"]
 [ext_resource type="PackedScene" uid="uid://u7dl3ngrkctn" path="res://Asset Scenes/Environment/Ground Textures/StonePath_Horiz.tscn" id="27_whfl0"]
 [ext_resource type="PackedScene" uid="uid://vge1fwtq6d44" path="res://Asset Scenes/Environment/Ground Textures/StonePath_Vert.tscn" id="28_1k3xm"]
-[ext_resource type="Script" path="res://Asset Scenes/House Areas/walk_speed_area.gd" id="29_j0c75"]
+[ext_resource type="Script" path="res://Scripts/Misc/WalkSpeedArea.gd" id="29_j0c75"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6lunc"]
 size = Vector2(176, 350)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dquflthfn7b6r"]
 
-[ext_resource type="Script" path="res://Scripts/grass_shake.gd" id="1_2xf4x"]
+[ext_resource type="Script" path="res://Scripts/Misc/GrassShake.gd" id="1_2xf4x"]
 [ext_resource type="Texture2D" uid="uid://dportnjfldxk" path="res://Assets/Environ/Garden/Strawberrry.png" id="2_lpok2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ummu5"]

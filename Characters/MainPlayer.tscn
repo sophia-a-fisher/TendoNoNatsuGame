@@ -1,7 +1,7 @@
 [gd_scene load_steps=29 format=3 uid="uid://b3xdl0gmx2p0a"]
 
 [ext_resource type="Texture2D" uid="uid://cwbrbjkrgqp4f" path="res://Assets/Characters/Main_Character.png" id="1"]
-[ext_resource type="Script" path="res://Characters/Scripts/MainPlayer.gd" id="2"]
+[ext_resource type="Script" path="res://Scripts/Characters/MainPlayer.gd" id="2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_reghs"]
 radius = 5.5

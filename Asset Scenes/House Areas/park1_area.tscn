@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bq242dr2wxvtr" path="res://Asset Scenes/Environment/Park/Bars.tscn" id="9_n0ppd"]
 [ext_resource type="PackedScene" uid="uid://b7gcooorxqn8a" path="res://Asset Scenes/Environment/Park/Water_Fountain.tscn" id="10_3wqnl"]
 [ext_resource type="PackedScene" uid="uid://dv6lxp8ts5ldv" path="res://Asset Scenes/Environment/Park/Swing.tscn" id="11_4av7g"]
-[ext_resource type="Script" path="res://Asset Scenes/House Areas/walk_speed_area.gd" id="12_b8e1c"]
+[ext_resource type="Script" path="res://Scripts/Misc/WalkSpeedArea.gd" id="12_b8e1c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yo64x"]
 size = Vector2(153, 493)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://co4ho1bn03wi8"]
 
 [ext_resource type="Texture2D" uid="uid://2dgqusa4p6ki" path="res://Assets/Environ/Houses/HouseTanSmall.png" id="1_uhr3c"]
-[ext_resource type="Script" path="res://Asset Scenes/Environment/Houses/House_Entry.gd" id="2_7f4mx"]
+[ext_resource type="Script" path="res://Scripts/Misc/HouseEntry.gd" id="2_7f4mx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j101"]
 size = Vector2(44.9981, 55.9907)

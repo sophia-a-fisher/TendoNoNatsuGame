@@ -1,20 +1,21 @@
 res://default_env.tres
-res://Levels/VillageLevel.tscn
-res://Assets/UI/DayNightTexture.tres
 res://Characters/MainPlayer.tscn
-res://Asset Scenes/House Areas/park3_area.tscn
+res://Assets/UI/DayNightTexture.tres
+res://Levels/VillageLevel.tscn
 res://Dialog/DialogBox.tscn
-res://Dialog/Dialog Translations - Sheet1.English.translation
-res://Dialog/Dialog Translations - Sheet1.Japanese.translation
-res://Asset Scenes/House Areas/house2_area.tscn
-res://Characters/Scripts/MainPlayer.gd
-res://Characters/Scripts/GlobalPlayer.gd
-res://Asset Scenes/Environment/Houses/House_Entry.gd
-res://Asset Scenes/House Interiors/House_Exit.gd
-res://Levels/VillagerManager.gd
 res://Asset Scenes/House Interiors/house1_interior.tscn
-res://Levels/village_level.gd
 res://Characters/Villager1.tscn
-res://Asset Scenes/House Interiors/house_interior.gd
-res://Levels/villager.gd
-res://Dialog/Dialog_Manager.gd
+res://Art Assets/UI/DayNightTexture.tres
+res://Asset Scenes/House Areas/park3_area.tscn
+res://Scripts/Misc/GrassShake.gd
+res://Scripts/Misc/AIPatrolPoint.gd
+res://Scripts/Managers/GameManager.gd
+res://Scripts/Misc/DayNightCycle.gd
+res://Scripts/Scenes/HouseScene.gd
+res://Scripts/Scenes/VillageScene.gd
+res://Asset Scenes/Environment/Houses/House_Entry.gd
+res://Scripts/Misc/HouseExit.gd
+res://Scripts/Misc/DialogBox.gd
+res://Scripts/Managers/DialogManager.gd
+res://Scripts/Misc/HouseEntry.gd
+res://Scripts/Misc/WalkSpeedArea.gd

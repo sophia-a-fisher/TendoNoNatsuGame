@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ybtke1d51lg8"]
 
-[ext_resource type="Script" path="res://Scripts/grass_shake.gd" id="1_nbn31"]
+[ext_resource type="Script" path="res://Scripts/Misc/GrassShake.gd" id="1_nbn31"]
 [ext_resource type="Texture2D" uid="uid://dl50qa8e4ncyw" path="res://Assets/Environ/Grass/ForestDetail1.png" id="2_1120r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ummu5"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://cdcudvhfubgqj"]
 
-[ext_resource type="Script" path="res://Levels/villager.gd" id="1_rc6ub"]
+[ext_resource type="Script" path="res://Scripts/Characters/Villager.gd" id="1_rc6ub"]
 [ext_resource type="Texture2D" uid="uid://dgjendcid341o" path="res://Assets/Characters/GIMP/Villager_10.png" id="2_6hwir"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rpx8s"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://blnihyf8oe8x7"]
 
-[ext_resource type="Script" path="res://Scripts/grass_shake.gd" id="1_nj05m"]
+[ext_resource type="Script" path="res://Scripts/Misc/GrassShake.gd" id="1_nj05m"]
 [ext_resource type="Texture2D" uid="uid://c7l4xdgkb6c2y" path="res://Assets/Environ/Garden/Tomatoes.png" id="2_41ai3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ummu5"]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=69 format=3 uid="uid://0hpu1n4vc1us"]
 
 [ext_resource type="PackedScene" uid="uid://b3xdl0gmx2p0a" path="res://Characters/MainPlayer.tscn" id="1"]
-[ext_resource type="Script" path="res://Levels/village_level.gd" id="1_44bah"]
+[ext_resource type="Script" path="res://Scripts/Scenes/VillageScene.gd" id="1_44bah"]
 [ext_resource type="Texture2D" uid="uid://m5j87sk5563s" path="res://Assets/Map/IshiguraDetailFinal.png" id="1_fmt0g"]
-[ext_resource type="Script" path="res://Levels/day_night_cycle.gd" id="3_gn3jr"]
+[ext_resource type="Script" path="res://Scripts/Misc/DayNightCycle.gd" id="3_gn3jr"]
 [ext_resource type="PackedScene" uid="uid://b6ldhs38j4pew" path="res://Asset Scenes/House Areas/house1_area.tscn" id="3_mqou8"]
 [ext_resource type="Texture2D" uid="uid://ck6mjpslbjggs" path="res://Assets/UI/DayNightTexture.tres" id="4_djjuc"]
 [ext_resource type="PackedScene" uid="uid://b6in3gcvt7pu4" path="res://Asset Scenes/House Areas/shrine1_area.tscn" id="4_mljgv"]
@@ -49,8 +49,8 @@
 [ext_resource type="PackedScene" uid="uid://dvgds5wof8g6w" path="res://Asset Scenes/House Areas/house17_area.tscn" id="28_einri"]
 [ext_resource type="PackedScene" uid="uid://baytwvo7f6lli" path="res://Asset Scenes/House Areas/shrine4_area.tscn" id="29_qxiqc"]
 [ext_resource type="PackedScene" uid="uid://3xqvswbcf8cq" path="res://Asset Scenes/House Areas/park6_area.tscn" id="30_wsc8b"]
-[ext_resource type="PackedScene" uid="uid://dccvhvwtxvo83" path="res://Asset Scenes/AI_Patrol_Point.tscn" id="36_0q86a"]
-[ext_resource type="Script" path="res://Asset Scenes/ai_patrol_point.gd" id="37_nfe22"]
+[ext_resource type="PackedScene" uid="uid://dccvhvwtxvo83" path="res://Characters/AI_Patrol_Point.tscn" id="36_0q86a"]
+[ext_resource type="Script" path="res://Scripts/Misc/AIPatrolPoint.gd" id="37_nfe22"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jiond"]
 size = Vector2(324.5, 20)
