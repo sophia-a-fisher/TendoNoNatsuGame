@@ -70,7 +70,6 @@ y_sort_enabled = true
 
 [node name="MainPlayer" parent="Sorting" instance=ExtResource("1_savuj")]
 position = Vector2(-222, 157)
-move_speed = 45.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Sorting/MainPlayer"]
 remote_path = NodePath("../../../Camera2D")

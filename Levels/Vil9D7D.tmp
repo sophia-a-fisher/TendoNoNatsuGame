@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://0hpu1n4vc1us"]
+[gd_scene load_steps=69 format=3 uid="uid://0hpu1n4vc1us"]
 
 [ext_resource type="PackedScene" uid="uid://b3xdl0gmx2p0a" path="res://Characters/MainPlayer.tscn" id="1"]
 [ext_resource type="Script" path="res://Scripts/Scenes/VillageScene.gd" id="1_44bah"]
@@ -9,22 +9,38 @@
 [ext_resource type="PackedScene" uid="uid://b6in3gcvt7pu4" path="res://Asset Scenes/House Areas/shrine1_area.tscn" id="4_mljgv"]
 [ext_resource type="PackedScene" uid="uid://ba03xvc5fw4cv" path="res://Asset Scenes/House Areas/house2_area.tscn" id="5_ip48w"]
 [ext_resource type="PackedScene" uid="uid://drincroaodi7t" path="res://Asset Scenes/House Areas/house3_area.tscn" id="6_ktxvj"]
+[ext_resource type="PackedScene" uid="uid://cj1vso6darv8t" path="res://Characters/Villager2.tscn" id="7_8u7c3"]
 [ext_resource type="PackedScene" uid="uid://cxamwk7mpcosp" path="res://Asset Scenes/House Areas/park1_area.tscn" id="7_ngclq"]
+[ext_resource type="PackedScene" uid="uid://ceq8yh8fa8u6b" path="res://Characters/Villager3.tscn" id="8_x1ovb"]
 [ext_resource type="PackedScene" uid="uid://cbo382qibypdv" path="res://Asset Scenes/House Areas/house4_area.tscn" id="9_4mubc"]
+[ext_resource type="PackedScene" uid="uid://c7ow57rdodqhd" path="res://Characters/Villager4.tscn" id="9_mg0k4"]
 [ext_resource type="PackedScene" uid="uid://bhmsprl2tg8uv" path="res://Asset Scenes/House Areas/house5_area.tscn" id="10_a6g13"]
+[ext_resource type="PackedScene" uid="uid://b7oahcn71dsx4" path="res://Characters/Villager5.tscn" id="10_ko3wg"]
 [ext_resource type="PackedScene" uid="uid://b03ufi76bo7vc" path="res://Asset Scenes/House Areas/park2_area.tscn" id="10_qmwdm"]
+[ext_resource type="PackedScene" uid="uid://dn6rvh8qinmr4" path="res://Characters/Villager6.tscn" id="11_00omp"]
 [ext_resource type="PackedScene" uid="uid://da43tuqfyky6j" path="res://Asset Scenes/House Areas/shrine2_area.tscn" id="11_ifmf6"]
 [ext_resource type="PackedScene" uid="uid://crnvaglc268g5" path="res://Asset Scenes/House Areas/park3_area.tscn" id="12_1yu0j"]
+[ext_resource type="PackedScene" uid="uid://deci65bkfmqtq" path="res://Characters/Villager7.tscn" id="12_yolk3"]
 [ext_resource type="PackedScene" uid="uid://b4184d4loebdi" path="res://Asset Scenes/House Areas/house6_area.tscn" id="13_6sswb"]
+[ext_resource type="PackedScene" uid="uid://dacjmih2crsey" path="res://Characters/Villager8.tscn" id="13_n8u18"]
 [ext_resource type="PackedScene" uid="uid://os55baqmw1k6" path="res://Asset Scenes/House Areas/house7_area.tscn" id="14_2iqvu"]
+[ext_resource type="PackedScene" uid="uid://vxjx6k2ydkc6" path="res://Characters/Villager9.tscn" id="14_3ynkw"]
+[ext_resource type="PackedScene" uid="uid://cdcudvhfubgqj" path="res://Characters/Villager10.tscn" id="15_0bsyn"]
 [ext_resource type="PackedScene" uid="uid://bsp3tim4sua6g" path="res://Asset Scenes/House Areas/house8_area.tscn" id="15_lp3ii"]
 [ext_resource type="PackedScene" uid="uid://biudg7rojdlki" path="res://Asset Scenes/House Areas/house9_area.tscn" id="16_ei234"]
+[ext_resource type="PackedScene" uid="uid://b3pdagf1h4sun" path="res://Characters/Villager11.tscn" id="16_jnbo7"]
 [ext_resource type="PackedScene" uid="uid://cs18xx5lrsddm" path="res://Asset Scenes/House Areas/park4_area.tscn" id="17_o2l7y"]
+[ext_resource type="PackedScene" uid="uid://2r00vt6i0dew" path="res://Characters/Villager12.tscn" id="17_yk6yd"]
+[ext_resource type="PackedScene" uid="uid://bnd1jnragfmnu" path="res://Characters/Villager13.tscn" id="18_23fou"]
 [ext_resource type="PackedScene" uid="uid://bn4it88juu1ct" path="res://Asset Scenes/House Areas/house10_area.tscn" id="18_ednt2"]
+[ext_resource type="PackedScene" uid="uid://d3nqem5fqklgx" path="res://Characters/Villager14.tscn" id="19_e7kbx"]
 [ext_resource type="PackedScene" uid="uid://bsowbseadlmki" path="res://Asset Scenes/House Areas/house11_area.tscn" id="19_oox0v"]
+[ext_resource type="PackedScene" uid="uid://cpqmh2excbqk" path="res://Characters/Villager15.tscn" id="20_ditvc"]
 [ext_resource type="PackedScene" uid="uid://b36oefkiah5dj" path="res://Asset Scenes/House Areas/house12_area.tscn" id="20_m6fm8"]
+[ext_resource type="PackedScene" uid="uid://ce3hbcdg3wtj7" path="res://Characters/Villager17.tscn" id="21_g0op3"]
 [ext_resource type="PackedScene" uid="uid://c4cblamun2fs0" path="res://Asset Scenes/House Areas/shrine3_area.tscn" id="21_ko7t1"]
 [ext_resource type="PackedScene" uid="uid://b4gnri4lt8efg" path="res://Asset Scenes/House Areas/house13_area.tscn" id="22_dq074"]
+[ext_resource type="PackedScene" uid="uid://d1o6pocguqe4m" path="res://Characters/Villager16.tscn" id="22_vl1n2"]
 [ext_resource type="PackedScene" uid="uid://culkquegpikyi" path="res://Asset Scenes/House Areas/house14_area.tscn" id="23_h7477"]
 [ext_resource type="PackedScene" uid="uid://bqjl0ikm1vooq" path="res://Asset Scenes/House Areas/house15_area.tscn" id="24_jos3q"]
 [ext_resource type="PackedScene" uid="uid://bb1eh1xuc6qpe" path="res://Asset Scenes/House Areas/cemetary1_area.tscn" id="25_x814q"]
@@ -158,6 +174,7 @@ y_sort_enabled = true
 [node name="MainPlayer" parent="Sorting" instance=ExtResource("1")]
 z_index = 1
 position = Vector2(20, -63)
+move_speed = 45.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Sorting/MainPlayer"]
 remote_path = NodePath("../Camera2D")
@@ -174,6 +191,38 @@ editor_draw_limits = true
 z_index = 1
 y_sort_enabled = true
 metadata/_edit_lock_ = true
+
+[node name="CharacterBody2D2" parent="Sorting/VillagerContainer" instance=ExtResource("7_8u7c3")]
+
+[node name="CharacterBody2D3" parent="Sorting/VillagerContainer" instance=ExtResource("8_x1ovb")]
+
+[node name="CharacterBody2D4" parent="Sorting/VillagerContainer" instance=ExtResource("9_mg0k4")]
+
+[node name="CharacterBody2D5" parent="Sorting/VillagerContainer" instance=ExtResource("10_ko3wg")]
+
+[node name="CharacterBody2D6" parent="Sorting/VillagerContainer" instance=ExtResource("11_00omp")]
+
+[node name="CharacterBody2D7" parent="Sorting/VillagerContainer" instance=ExtResource("12_yolk3")]
+
+[node name="CharacterBody2D8" parent="Sorting/VillagerContainer" instance=ExtResource("13_n8u18")]
+
+[node name="CharacterBody2D9" parent="Sorting/VillagerContainer" instance=ExtResource("14_3ynkw")]
+
+[node name="CharacterBody2D10" parent="Sorting/VillagerContainer" instance=ExtResource("15_0bsyn")]
+
+[node name="CharacterBody2D11" parent="Sorting/VillagerContainer" instance=ExtResource("16_jnbo7")]
+
+[node name="CharacterBody2D12" parent="Sorting/VillagerContainer" instance=ExtResource("17_yk6yd")]
+
+[node name="CharacterBody2D13" parent="Sorting/VillagerContainer" instance=ExtResource("18_23fou")]
+
+[node name="CharacterBody2D14" parent="Sorting/VillagerContainer" instance=ExtResource("19_e7kbx")]
+
+[node name="CharacterBody2D15" parent="Sorting/VillagerContainer" instance=ExtResource("20_ditvc")]
+
+[node name="CharacterBody2D17" parent="Sorting/VillagerContainer" instance=ExtResource("21_g0op3")]
+
+[node name="CharacterBody2D16" parent="Sorting/VillagerContainer" instance=ExtResource("22_vl1n2")]
 
 [node name="AiPatrolPoint" parent="Sorting/VillagerContainer" instance=ExtResource("36_0q86a")]
 position = Vector2(-9, -65)

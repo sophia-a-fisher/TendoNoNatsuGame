@@ -1,27 +1,25 @@
 extends CharacterBody2D
 
-
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-@onready var nav : NavigationAgent2D = $NavigationAgent2D
-@onready var anim_player : AnimationPlayer = $AnimationPlayer
-var speed : float = 2000
-var accel : float = 1
 var move_finished : bool = true
 var direction = Vector3()
+
+@export var dialog_prefix : String = ""
 @export var next_point_array: Array = [[]]
-var next_point_positions: Array = [[]]
 @export var next_time_array : PackedFloat32Array
+var next_point_positions: Array = [[]]
+
 var next_point_idx : int = 0
 var next_time_idx : int = 0
-var walk_anim_playing : bool = false
-#var wait_time : float = 0
-var created_patrol_pos : bool = false
 var path_idx : int = 0
-@export var dialog_prefix : String = ""
-var movement_pause = false
+
+var created_patrol_pos : bool = false
+var movement_pause : bool = false
+
 # temporary variable to get villager spawning correctly
-var first_move = true
+var first_move: bool = true
+
+@onready var nav : NavigationAgent2D = $NavigationAgent2D
+@onready var anim_player : AnimationPlayer = $AnimationPlayer
 
 func _ready() -> void:
 	# Starting the AI off idling
@@ -44,24 +42,37 @@ func _create_patrol_point_positions() -> void:
 		else:
 			next_point_positions.append(position_array)
 			
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if not movement_pause:
+		# TODO move this to ready when villagerManager done
 		if !created_patrol_pos:
 			# Creating a cached array of patrol point positions
 			_create_patrol_point_positions()
 			created_patrol_pos = true
 
-		# Checking it we have finished moving to the point
-		if (next_time_idx < next_time_array.size()):
-			var past_move_time : bool
-			var time_past = next_time_array[next_time_idx] * 600
-			past_move_time = (int(GlobalEnviron.time) % 600) >= time_past
-			if (past_move_time):
-				move_finished = false	
+		handle_new_target_path()
 		
 		# Checking it is time to move to a new point
 		if (!move_finished) and (next_point_idx < next_point_array.size()):
-			_move_to_point(next_point_positions[next_point_idx], delta)
+			_move_to_point(next_point_positions[next_point_idx])
+			
+func handle_new_target_path() -> void:
+	if (next_time_idx < next_time_array.size()):
+		var cur_time = next_time_array[next_time_idx] * 600
+		var past_move_time = (int(GameManager.time) % 600) >= cur_time
+		# Checking if its time to start moving along a new path
+		if (past_move_time):
+			move_finished = false	
+			
+func handle_reached_point(target_path : Array) -> void:
+	if target_path.size() > 0:
+		var next_position = target_path[path_idx]
+		# Checking we have reached the target point
+		if (position - next_position).length() <= 1:
+			path_idx += 1
+			# Checking we had reached the final path destination
+			if path_idx >= target_path.size():
+				handle_move_finished()
 			
 func pause_movement():
 	movement_pause = true
@@ -73,21 +84,31 @@ func pause_movement():
 		anim_player.play("idle_up") 
 	elif anim_player.current_animation == "walk_down":
 		anim_player.play("idle_down") 
+		
+func unpause_movement():
+	movement_pause = false
 	
-func _move_to_point(target_path : Array, delta: float) -> void:		
-	# Temporary fix to get villagers spawning into village level initially
+func _move_to_point(target_path : Array) -> void:		
+	# TODO get rid of, temporary fix to get villagers spawning into village level initially
 	if first_move:
 		if (target_path.size() == 0):
 			VillagerManager.update_villager_state(dialog_prefix, VillagerManager.SceneType.VILLAGE)
 			queue_free()
 			return
 		first_move = false
-	#nav.target_position = target_position
-	var next_position = target_path[path_idx]
 	
-	direction = next_position - global_position
-	direction = direction.normalized()
-	velocity = direction * speed * delta
+	if path_idx < target_path.size():
+		var next_position = target_path[path_idx]
+		direction = next_position - global_position
+		direction = direction.normalized()
+		velocity = direction * VillagerManager.speed
+		play_walk_anim()
+		move_and_slide()
+		handle_reached_point(next_point_positions[next_point_idx])
+	else:
+		handle_move_finished()
+	
+func play_walk_anim() -> void:
 	if abs(velocity.y) <= abs(velocity.x):
 		if velocity.x < 0:
 			anim_player.play("walk_left")
@@ -98,25 +119,21 @@ func _move_to_point(target_path : Array, delta: float) -> void:
 			anim_player.play("walk_up")
 		elif velocity.y > 0:
 			anim_player.play("walk_down")
-	
-	move_and_slide()
-	
-	if (position - next_position).length() <= 1:
-		path_idx += 1
-		if path_idx >= target_path.size():
-			move_finished = true
-			next_point_idx += 1
-			next_time_idx += 1
-			path_idx = 0
 			
-			if (anim_player.current_animation == "walk_left") or (anim_player.current_animation == "walk_right"):
-				if velocity.x < 0:
-					anim_player.play("idle_left")
-				elif velocity.x > 0:
-					anim_player.play("idle_right")
-			else:
-				if velocity.y < 0:
-					anim_player.play("idle_up")
-				elif velocity.y > 0:
-					anim_player.play("idle_down")
-		
+func handle_move_finished() -> void:
+	move_finished = true
+	next_point_idx += 1
+	next_time_idx += 1
+	path_idx = 0
+	
+	var anim = anim_player.current_animation
+	if (anim == "walk_left") or (anim == "walk_right"):
+		if velocity.x < 0:
+			anim_player.play("idle_left")
+		elif velocity.x > 0:
+			anim_player.play("idle_right")
+	else:
+		if velocity.y < 0:
+			anim_player.play("idle_up")
+		elif velocity.y > 0:
+			anim_player.play("idle_down")

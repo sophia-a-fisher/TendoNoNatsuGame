@@ -19,3 +19,27 @@ res://Scripts/Misc/DialogBox.gd
 res://Scripts/Managers/DialogManager.gd
 res://Scripts/Misc/HouseEntry.gd
 res://Scripts/Misc/WalkSpeedArea.gd
+res://Scripts/Managers/VillagerManager.gd
+res://Scripts/Managers/PlayerManager.gd
+res://Scripts/Characters/MainPlayer.gd
+res://Scripts/Characters/Villager.gd
+res://Scripts/Managers/TransitionManager.gd
+res://GUI/TransitionScreen.tscn
+res://Scripts/Characters/Player.gd
+res://Data Assets/VillagerDataTable.tscn
+res://Asset Scenes/House Interiors/house17_interior.tscn
+res://Asset Scenes/House Interiors/house2_interior.tscn
+res://Asset Scenes/House Interiors/house3_interior.tscn
+res://Asset Scenes/House Interiors/house4_interior.tscn
+res://Asset Scenes/House Interiors/house5_interior.tscn
+res://Asset Scenes/House Interiors/house6_interior.tscn
+res://Asset Scenes/House Interiors/house7_interior.tscn
+res://Asset Scenes/House Interiors/house8_interior.tscn
+res://Asset Scenes/House Interiors/house9_interior.tscn
+res://Asset Scenes/House Interiors/house10_interior.tscn
+res://Asset Scenes/House Interiors/house11_interior.tscn
+res://Asset Scenes/House Interiors/house12_interior.tscn
+res://Asset Scenes/House Interiors/house13_interior.tscn
+res://Asset Scenes/House Interiors/house14_interior.tscn
+res://Asset Scenes/House Interiors/house15_interior.tscn
+res://Asset Scenes/House Interiors/house16_interior.tscn

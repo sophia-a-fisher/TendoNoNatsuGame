@@ -68,7 +68,6 @@ y_sort_enabled = true
 
 [node name="MainPlayer" parent="Sorting" instance=ExtResource("1_gey5h")]
 position = Vector2(-223, 156)
-move_speed = 45.0
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Sorting/MainPlayer"]
 remote_path = NodePath("../../../Camera2D")
@@ -445,6 +444,9 @@ position = Vector2(-222, 174)
 
 [node name="Gravel43" parent="Sorting" instance=ExtResource("43_uj48s")]
 position = Vector2(-28, 50)
+
+[node name="VillagerContainer" type="Node2D" parent="Sorting"]
+y_sort_enabled = true
 
 [node name="Exitway" type="Area2D" parent="." groups=["House8_Exit"]]
 position = Vector2(-33, 134)

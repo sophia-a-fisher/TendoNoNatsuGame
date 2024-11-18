@@ -10,7 +10,7 @@ func _ready() -> void:
 	position_dialog_box()
 	
 func scale_dialog_box() -> void:
-	scale = Vector2(GlobalEnviron.camera_zoom, GlobalEnviron.camera_zoom)
+	scale = Vector2(GameManager.camera_zoom, GameManager.camera_zoom)
 	
 # Positioning horizontally centered, and 50 pixels from bottom
 func position_dialog_box() -> void:

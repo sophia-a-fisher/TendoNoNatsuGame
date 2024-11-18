@@ -4,8 +4,8 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		body.move_speed = body.stroll_speed
+		body.move_speed = PlayerManager.stroll_speed
 		
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		body.move_speed = body.walk_speed;
+		body.move_speed = PlayerManager.walk_speed;

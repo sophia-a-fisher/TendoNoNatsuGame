@@ -1,0 +1,55 @@
+[gd_scene load_steps=18 format=3 uid="uid://bunuduofs07wx"]
+
+[ext_resource type="PackedScene" uid="uid://b5mpdo5tsf63m" path="res://Characters/Villager1.tscn" id="1_yaue5"]
+[ext_resource type="PackedScene" uid="uid://cj1vso6darv8t" path="res://Characters/Villager2.tscn" id="2_qvv4b"]
+[ext_resource type="PackedScene" uid="uid://ceq8yh8fa8u6b" path="res://Characters/Villager3.tscn" id="3_yil5c"]
+[ext_resource type="PackedScene" uid="uid://c7ow57rdodqhd" path="res://Characters/Villager4.tscn" id="4_j8w8u"]
+[ext_resource type="PackedScene" uid="uid://b7oahcn71dsx4" path="res://Characters/Villager5.tscn" id="5_ti14i"]
+[ext_resource type="PackedScene" uid="uid://dn6rvh8qinmr4" path="res://Characters/Villager6.tscn" id="6_3ao0y"]
+[ext_resource type="PackedScene" uid="uid://deci65bkfmqtq" path="res://Characters/Villager7.tscn" id="7_u0maj"]
+[ext_resource type="PackedScene" uid="uid://dacjmih2crsey" path="res://Characters/Villager8.tscn" id="8_kqhkc"]
+[ext_resource type="PackedScene" uid="uid://vxjx6k2ydkc6" path="res://Characters/Villager9.tscn" id="9_o88l4"]
+[ext_resource type="PackedScene" uid="uid://cdcudvhfubgqj" path="res://Characters/Villager10.tscn" id="10_7p75n"]
+[ext_resource type="PackedScene" uid="uid://b3pdagf1h4sun" path="res://Characters/Villager11.tscn" id="11_ev5sy"]
+[ext_resource type="PackedScene" uid="uid://2r00vt6i0dew" path="res://Characters/Villager12.tscn" id="12_cf4ix"]
+[ext_resource type="PackedScene" uid="uid://bnd1jnragfmnu" path="res://Characters/Villager13.tscn" id="13_130u5"]
+[ext_resource type="PackedScene" uid="uid://d3nqem5fqklgx" path="res://Characters/Villager14.tscn" id="14_j31e5"]
+[ext_resource type="PackedScene" uid="uid://cpqmh2excbqk" path="res://Characters/Villager15.tscn" id="15_e3dpi"]
+[ext_resource type="PackedScene" uid="uid://ce3hbcdg3wtj7" path="res://Characters/Villager17.tscn" id="16_onx7x"]
+[ext_resource type="PackedScene" uid="uid://d1o6pocguqe4m" path="res://Characters/Villager16.tscn" id="17_db05q"]
+
+[node name="VillagerDataTable" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_yaue5")]
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("2_qvv4b")]
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("3_yil5c")]
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("4_j8w8u")]
+
+[node name="CharacterBody2D5" parent="." instance=ExtResource("5_ti14i")]
+
+[node name="CharacterBody2D6" parent="." instance=ExtResource("6_3ao0y")]
+
+[node name="CharacterBody2D7" parent="." instance=ExtResource("7_u0maj")]
+
+[node name="CharacterBody2D8" parent="." instance=ExtResource("8_kqhkc")]
+
+[node name="CharacterBody2D9" parent="." instance=ExtResource("9_o88l4")]
+
+[node name="CharacterBody2D10" parent="." instance=ExtResource("10_7p75n")]
+
+[node name="CharacterBody2D11" parent="." instance=ExtResource("11_ev5sy")]
+
+[node name="CharacterBody2D12" parent="." instance=ExtResource("12_cf4ix")]
+
+[node name="CharacterBody2D13" parent="." instance=ExtResource("13_130u5")]
+
+[node name="CharacterBody2D14" parent="." instance=ExtResource("14_j31e5")]
+
+[node name="CharacterBody2D15" parent="." instance=ExtResource("15_e3dpi")]
+
+[node name="CharacterBody2D17" parent="." instance=ExtResource("16_onx7x")]
+
+[node name="CharacterBody2D16" parent="." instance=ExtResource("17_db05q")]

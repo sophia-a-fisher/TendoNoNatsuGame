@@ -1,24 +1,27 @@
 extends Node
 
-var dialog_active = false
 var dialog_box_instance = null
 var player = null
+var npc = null
+
 var master_key : String
 var typing : bool = false
+var dialog_active = false
+var LANG = "English"
 
 # Dictionaries to store parsed CSV data
 # Key is the key, item is the entire row including key
 var dialogs = {}
 var character_names = {}
 var master_tree = {}
-var LANG = "Japanese"
+
 @export var typing_speed: float = 0.05  # Speed of the typing effect (in seconds)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	load_csv_data()
 	
-func _set_player(_player) -> void:
+func set_player(_player) -> void:
 	player = _player;
 	
 # Start a dialog based on a master key
@@ -28,7 +31,7 @@ func start_dialog(_master_key: String):
 	player.pick_new_state(player.velocity)
 	master_key = _master_key
 	dialog_active = true
-	GlobalEnviron.time_paused = true
+	GameManager.time_paused = true
 	show_dialog(master_key)
 	
 	var characterKey = master_tree[master_key]["Speaker"]
@@ -44,9 +47,9 @@ func end_dialog():
 	if dialog_box_instance:
 		dialog_box_instance.queue_free()
 	player.input_enabled = true
-	GlobalEnviron.time_paused = false
+	GameManager.time_paused = false
 	dialog_active = false
-	player.unpause_npc()
+	npc.unpause_movement()
 	
 # Function to retrieve a random generic key for a character
 func get_generic_key(character_name: String) -> String:
@@ -81,21 +84,24 @@ func show_dialog(master_key: String):
 func _input(event):
 	if event.is_action_pressed("ui_talk"):
 		if not dialog_active:
-			player.check_for_npc_interaction()
+			var found_npc = player.check_for_npc_interaction()
+			if found_npc:
+				var gen_key = get_generic_key(npc.dialog_prefix)  # Pass the NPC to the dialog manager
+				if gen_key != "NA":
+					npc.pause_movement()
+					start_dialog(gen_key)
 		else:
 			if typing:
 				typing = false
 				dialog_box_instance.set_dialog_text()
 			else:
 				advance_dialog()
-	#elif dialog_active and event.is_action_pressed("ui_accept"):
-		
-		
+	
 # Advance dialog
 func advance_dialog():
 	# Advance to the next key in the sequence
 	var dialog_info = master_tree[master_key]
-		# Return the "Next" key, which is at index 4 (0-based index)
+	# Return the "Next" key, which is at index 4 (0-based index)
 	master_key = dialog_info["Next"]
 	if master_key == "NA":
 		end_dialog()
@@ -112,11 +118,7 @@ func advance_dialog():
 func load_csv_data():
 	 # Load the dialog CSV
 	dialogs = load_csv_to_dict("res://Dialog/Dialog Translations - Sheet1.csv", ["Key", "English", "Japanese"])
-
-	# Load the character names CSV
 	character_names = load_csv_to_dict("res://Dialog/Charater Name Translations - Sheet1.csv", ["Key", "English", "Japanese"])
-
-	# Load the master tree CSV
 	master_tree = load_csv_to_dict("res://Dialog/Dialog Master Tree - Sheet1.csv", ["Key", "Speaker", "Dialog", "Sprite", "Next", "Choice"])
 
 func load_csv_to_dict(path: String, headers: Array) -> Dictionary:
@@ -174,7 +176,3 @@ func parse_csv_line(line: String) -> Array:
 		fields.append(current_field.strip_edges())
 
 	return fields
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

@@ -19,8 +19,8 @@ config/icon="res://icon.png"
 
 [autoload]
 
-GlobalEnviron="*res://Scripts/Managers/GameManager.gd"
-GlobalPlayer="*res://Scripts/Managers/PlayerManager.gd"
+GameManager="*res://Scripts/Managers/GameManager.gd"
+PlayerManager="*res://Scripts/Managers/PlayerManager.gd"
 TransitionScreen="*res://GUI/TransitionScreen.tscn"
 DialogManager="*res://Scripts/Managers/DialogManager.gd"
 VillagerManager="*res://Scripts/Managers/VillagerManager.gd"
